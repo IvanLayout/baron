@@ -1,6 +1,30 @@
 @media (max-width: 767px)
 {
-	
+	.page-title{
+		font-size: 28px;
+	}
+
+	.text-block_marg{
+		margin-top: 16px;
+	}
+
+	.text-block h2{
+		font-size: 22px;
+		margin-bottom: 16px;
+	}
+
+	.text-block * + h2 {
+		margin-top: 26px;
+	}
+
+	.text-block blockquote{
+		margin-bottom: 20px;
+		padding: 17px 19px;
+	}
+
+	.text-block * + blockquote {
+		margin-top: 20px;
+	}
 
 
 	.section-head{
@@ -178,6 +202,21 @@
 
 	.recipes__slider .slider-pagination{
 		display: none;
+	}
+
+
+	.contacts_marg{
+		margin-top: 16px;
+	}
+
+	.contacts__title{
+		width: 100%;
+		margin-bottom: 18px;
+	}
+
+	.contacts__col{
+		width: 100%;
+		max-width: none;
 	}
 
 

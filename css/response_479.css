@@ -19,6 +19,10 @@
 	}
 
 
+	.contacts__map{
+		height: 220px;
+	}
+
 
 	.footer-subscribe{
 		flex-wrap: wrap;

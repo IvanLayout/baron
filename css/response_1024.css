@@ -406,7 +406,7 @@
 
 	.aside-ctalog__wrap{
 		max-width: none;
-		padding-bottom: 10px;
+		padding-bottom: 16px;
 		padding-top: 15px;
 	}
 
@@ -452,10 +452,19 @@
 		display: none;
 	}
 
+	.aside-ctalog__list a span{
+		display: none;
+	}
+
 	.centent-wrap__center{
 		width: 100%;
 		padding-top: 10px;
 		padding-bottom: 50px;
+	}
+
+	.page-title{
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	.page-title + .products_cats{
@@ -474,6 +483,11 @@
 		margin-top: 0;
 	}
 
+
+	.text-block_marg{
+		margin-top: 26px;
+	}
+
 	
 	.faq_marg{
 		margin-top: 45px;
@@ -488,6 +502,26 @@
 	.callback-btn{
 		width: 140px;
 	}
+
+
+	.contacts_marg{
+		margin-top: 26px;
+	}
+
+	.contacts__item + .contacts__item{
+		padding-top: 22px;
+		margin-top: 24px;
+	}
+
+	.contacts__line + .contacts__line{
+		margin-top: 16px;
+	}
+
+	.contacts__map{
+		margin-top: 32px;
+		height: 260px;
+	}
+
 
 	.footer__phones{
 		margin-left: 24px;
