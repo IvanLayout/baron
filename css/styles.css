@@ -3107,6 +3107,10 @@ input[type=checkbox]:checked + .checkbox__text::after
 }
 
 
+.products_marg{
+	margin-top: 36px;
+}
+
 .products_cats{
 	margin-top: 36px;
 }
