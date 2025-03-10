@@ -1,0 +1,37 @@
+@media (max-width: 479px)
+{
+	.header__time-title br{
+		display: inline;
+	}
+
+
+
+	.products__grid {
+		--products-count: 2;
+	}
+
+	.products__slider .swiper-slide{
+		width: calc(50% - 4px);
+	}
+
+	.aside-cart .products__slider .swiper-slide{
+		width: 132px;
+	}
+
+
+
+	.footer-subscribe{
+		flex-wrap: wrap;
+	}
+
+	.footer-subscribe__title{
+		width: 100%;
+		font-size: 18px;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.footer__menu-col{
+		width: 100%;
+	}
+}
