@@ -24,6 +24,31 @@
 	}
 
 
+	.product-info .page-title {
+		font-size: 24px;
+	}
+
+
+	.article {
+		width: calc(100% - 12px);
+		margin-top: 15px;
+	}
+
+	.article:nth-child(10n-1),
+	.article:nth-child(10n) {
+		width: calc(100% - 12px);
+	}
+
+	.article__img{
+		padding-bottom: 52.5%;
+	}
+
+	.article:nth-child(10n-1) .article__img,
+	.article:nth-child(10n) .article__img{
+		padding-bottom: 52.5%;
+	}
+
+
 	.footer-subscribe{
 		flex-wrap: wrap;
 	}

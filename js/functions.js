@@ -193,6 +193,48 @@ $(() => {
 		}
 	})
 
+
+	$('body').on('click', '.open-comment', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+			$(this).closest('.revirews__item').find('.comment').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$(this).closest('.revirews__item').find('.comment').addClass('_show')
+		}
+	})
+
+
+	$('body').on('click', '.cooking-recommendations__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.cooking-recommendations__item').hasClass('_active')) {
+			$(this).closest('.cooking-recommendations__item').removeClass('_active')
+		} else {
+			$(this).closest('.cooking-recommendations__item').addClass('_active')
+		}
+	})
+
+
+	// Sorting
+	$('body').on('click', '.sort-btns__btn', function (e) {
+		e.preventDefault()
+
+		if ( !$(this).hasClass('_active') ) {
+			$(this).closest('.sort-btns').find('.sort-btns__btn').removeClass('_active')
+			$(this).addClass('_active')
+			let name = $(this).text()
+
+			$(this).closest('.mini-modal_sort').find('.mini-modal__btn_sort span').text(name)
+
+			$('.mini-modal__btn, .mini-modal__modal').removeClass('_active')
+			$('body').removeClass('_lock-mini')
+		}
+	})
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false

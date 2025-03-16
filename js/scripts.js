@@ -72,7 +72,7 @@ $(() => {
 
 
 	if ($('.section-cats.swiper').length) {
-		mainPeviewsSlider = new Swiper('.section-cats.swiper', {
+		new Swiper('.section-cats.swiper', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -125,7 +125,7 @@ $(() => {
 
 
 	if ($('.recipes__slider').length) {
-		mainPeviewsSlider = new Swiper('.recipes__slider', {
+		new Swiper('.recipes__slider', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -170,12 +170,12 @@ $(() => {
 
 
 	if ($('.products__slider').length) {
-		mainPeviewsSlider = new Swiper('.products__slider', {
+		new Swiper('.products__slider', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 'auto',
-			slidesPerView: 2,
+			spaceBetween: 8,
+			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
 				loadPrevNext: true,
@@ -216,11 +216,55 @@ $(() => {
 		})
 	}
 
+	if ($('.products-small__slider').length) {
+		new Swiper('.products-small__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 10,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 10,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 12,
+					slidesPerView: 'auto'
+				},
+				'1025': {
+					spaceBetween: 12,
+					slidesPerView: 3
+				}
+			}
+		})
+	}
+
 
 	if ($('.product-info__slider').length) {
-		infrastructureSlider = new Swiper(".product-info__slider", {
+		productPhotoSlider = new Swiper(".product-info__slider", {
 			loop: false,
-			spaceBetween: 0,
+			spaceBetween: 10,
 			slidesPerView: 1,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -253,17 +297,17 @@ $(() => {
 			e.preventDefault()
 
 			let numberSlide = $(this).data('index-slide');
-			infrastructureSlider.slideTo(numberSlide);
+			productPhotoSlider.slideTo(numberSlide);
 		})
 	}
 
 
-	if ($('.section-gallery__slider').length) {
-		mainPeviewsSlider = new Swiper('.section-gallery__slider', {
+	if ($('.revirew-photo__slider').length) {
+		new Swiper('.revirew-photo__slider', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
-			spaceBetween: 6,
+			spaceBetween: 10,
 			slidesPerView: 'auto',
 			preloadImages: false,
 			lazy: {
@@ -274,13 +318,16 @@ $(() => {
 				checkInView: true,
 				loadOnTransitionStart: true
 			},
-			navigation: {
-				nextEl: '.slider-button-next',
-				prevEl: '.slider-button-prev'
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 6,
+					spaceBetween: 10,
 					slidesPerView: 'auto'
 				},
 				'480': {
@@ -288,18 +335,35 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'768': {
-					spaceBetween: 16,
+					spaceBetween: 10,
 					slidesPerView: 'auto'
 				},
 				'1025': {
-					spaceBetween: 20,
-					slidesPerView: 3
+					spaceBetween: 12,
+					slidesPerView: 11
 				}
+			}
+		})
+	}
+
+	if ($('.categories__slider').length) {
+		new Swiper('.categories__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
 			},
-			on: {
-				init: function (swiper) {
-					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				}
+			scrollbar: {
+				el: ".slider-scrollbar",
 			}
 		})
 	}
