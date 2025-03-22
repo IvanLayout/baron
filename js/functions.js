@@ -272,6 +272,22 @@ $(() => {
 			autoStart: false,
 		}
 	})
+
+
+	$('.header-search__input').keydown(function() {
+		let thisEl = $(this)
+		setTimeout( function() {
+			let value = thisEl.val()
+
+			if ( value != '' ) {
+				$('.header-search__bord').addClass('_show')
+				$('.search-menu').addClass('_hide')
+			} else {
+				$('.header-search__bord').removeClass('_show')
+				$('.search-menu').removeClass('_hide')
+			}
+		}, 0)
+	})
 })
 
 $(window).on('load', () => {

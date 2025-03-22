@@ -291,6 +291,25 @@
 		overflow-y: auto;
 	}
 
+	.search-menu{
+		display: none;
+		border-top: none;
+		width: 100%;
+		height: calc(100% - 76px);
+		margin-top: 16px;
+		padding: 0 27px 20px;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	.header-search__wrap._show .search-menu{
+		display: block;
+	}
+
+	.header-search__wrap._show .search-menu._hide{
+		display: none;
+	}
+
 	.header__info{
 		height: auto;
 	}

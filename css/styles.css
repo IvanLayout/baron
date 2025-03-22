@@ -907,7 +907,7 @@ button
 	padding: 21px 0 20px;
 }
 
-.header-search__wrap._show .header-search__bord{
+.header-search__bord._show{
 	display: block;
 }
 
@@ -973,6 +973,10 @@ button
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
+}
+
+.search-menu{
+	display: none;
 }
 
 
