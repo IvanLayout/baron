@@ -48,6 +48,31 @@
 		padding-bottom: 52.5%;
 	}
 
+	.form_lk{
+		max-width: none;
+	}
+	
+	.form__bot .form__submit{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.form .form__submit-btn{
+		width: 100%;
+		min-width: 1px;
+		padding: 0;
+	}
+
+	.forgot-password{
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.about-sale__form{
+		padding: 19px 19px 24px;
+	}
+
 
 	.footer-subscribe{
 		flex-wrap: wrap;

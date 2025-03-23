@@ -571,88 +571,97 @@
 					<div class="cont">
 						<div class="centent-wrap__flex _flex">
 							<div class="centent-wrap__wrap">
-								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> Контакты</div>
+								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Скидки</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
 									<aside class="aside-ctalog aside-ctalog_inner">
 										<div class="aside-ctalog__wrap">
-											<div class="aside-ctalog__list">
+											<div class="aside-ctalog__titlesmall">Изменение пароля</div>
+
+											<div class="aside-ctalog__list aside-ctalog__list_pad">
 												<div>
-													<a href="/baron">О магазине</a>
+													<a href="/baron">Заказы</a>
 												</div>
 												<div>
-													<a href="/">Режим работы</a>
+													<a href="/baron">Личные данные</a>
 												</div>
 												<div>
-													<a href="/">Заказ</a>
+													<a href="/baron">Адреса</a>
 												</div>
 												<div>
-													<a href="/baron">Доставка</a>
+													<a href="/">Изменение пароля</a>
 												</div>
 												<div>
-													<a href="/baron">Скидки<span> для пенсионеров, инвалидов, сирот и ветеранов ВОВ</span></a>
+													<a class="active">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
-												<div>
-													<a href="/baron">Оптовикам и дистрибьюторам</a>
-												</div>
-												<div>
-													<a href="/baron">Правила продажи</a>
-												</div>
-												<div>
-													<a class="active">Контакты</a>
-												</div>
+											</div>
+
+											<div class="aside-logout">
+												<a href="/" class="aside-logout__btn">
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow2"></use>
+													</svg>
+
+													Выйти
+												</a>
 											</div>
 										</div>
 									</aside>
 
 									<section class="centent-wrap__center">
-										<h1 class="page-title">Контакты</h1>
+										<h1 class="page-title page-title_small">Скидки инвалидам, пенсионерам и ветеранам</h1>
 
-										<section class="contacts contacts_marg">
-											<div class="contacts__items">
-												<div class="contacts__item _flex">
-													<div class="contacts__title">Свяжитесь с нами</div>
+										<section class="about-sale">
+											<div class="text-block">
+												<p>
+													В нашем интернет-магазине действуют скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ.
+												</p>
 
-													<div class="contacts__col">
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Телефон</div>
+												<blockquote>
+													Скидка для пенсионеров, инвалидов и сирот — 10%. Скидка для ветеранов ВОВ — 15%
+												</blockquote>
 
-															<div class="contacts__desc">
-																<a href="tel:+77273171000">+7 727 317-10-00</a>, <a href="tel:+77470942829">+7 747 094-28-29</a>
-															</div>
-														</div>
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Электронная почта</div>
+												<p>
+													При оформлении заказа через интернет-магазин, вам нужно написать о том, что заказ оформлен лицом, имеющим льготную скидку в комментарии к заказу.
+												</p>
 
-															<div class="contacts__desc">
-																<a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="contacts__item _flex">
-													<div class="contacts__title">Посетите наш магазин</div>
+												<p>
+													Если вы делаете заказ по телефону – подскажите нашему менеджеру, что у вас есть льготная скидка.Во время доставки курьер запросит подтверждающие документы. Заказ должен быть оформлен и принят человеком, на кого распространяется скидка.
+												</p>
 
-													<div class="contacts__col">
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Адрес</div>
-
-															<div class="contacts__desc">
-																Казахстан, Алматинская обл, г. Талгар, ул. Кашкари, 5
-															</div>
-														</div>
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Режим работы</div>
-
-															<div class="contacts__desc">
-																С понедельника по субботу с 9:00 до 18:00
-															</div>
-														</div>
-													</div>
-												</div>
+												<p>
+													<b>Скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ не суммируются с другими скидками и акциями. Скидки также не распространяются на четверти свинины и заднюю ногу свинины.</b>
+												</p>
 											</div>
 
-											<div class="contacts__map" id="map"></div>
+											<form action="" class="form about-sale__form">
+												<div class="about-sale__title">Подтверждение права на скидку</div>
+
+												<div class="about-sale__desc">Напишите номер пенсионного удостоверения или прикрепите фото документа, подтверждающего право на скидку</div>
+
+												<div class="about-sale__wrap">
+													<div class="form__line">
+														<div class="form__label">Номер пенсионного удостоверения</div>
+	
+														<div class="form__field">
+															<input type="text" value="" placeholder="123-456-781-90" data-mask="999-999-999-99" class="form__input form__input_pension">
+														</div>
+													</div>
+
+													<div class="file-selection">
+														<input type="file" name="" id="file1">
+								
+														<label for="file1" class="file-selection__path">
+															<span class="file-selection__path-icon">
+																<svg>
+																	<use xlink:href="images/sprite.svg#add"></use>
+																</svg>
+															</span>
+															<span class="file-selection__path-name">Прикрепить фото документа</span>
+														</label>
+													</div>
+												</div>
+											</form>
 										</section>
 									</section>
 								</div>
