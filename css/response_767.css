@@ -405,6 +405,40 @@
 	}
 
 
+	.addresses__items{
+		margin-top: 24px;
+	}
+
+	.address-radio + .address-radio{
+		margin-top: 24px;
+	}
+
+	.address-radio__wrap{
+		padding-right: 0;
+		flex-wrap: wrap;
+	}
+
+	.address-radio__top{
+		position: relative;
+		padding-right: 24px;
+		display: inline-block;
+	}
+
+	.address-radio__icon{
+		top: 1px;
+		margin-top: 0;
+	}
+
+	.address-radio__main{
+		margin: 9px 0 0;
+	}
+
+	.address-radio__wrap::before{
+		top: 10px;
+		margin-top: 0;
+	}
+
+
 	.footer{
 		padding-top: 30px;
 		padding-bottom: 25px;

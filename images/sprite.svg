@@ -70,4 +70,9 @@
 	<symbol xmlns="http://www.w3.org/2000/svg" id="add" viewBox="0 0 14 15">
 		<path d="M7 1V7.5M7 14V7.5M7 7.5H13.5M7 7.5H0.5" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
+
+	<symbol xmlns="http://www.w3.org/2000/svg" id="edit" viewBox="0 0 18 18">
+		<path d="M2.625 15.75H16.125" stroke-linecap="round" stroke-linejoin="round"/>
+		<path d="M4.125 10.02V12.75H6.86887L14.625 4.9905L11.8856 2.25L4.125 10.02Z" stroke-linejoin="round"/>
+	</symbol>
 </svg>

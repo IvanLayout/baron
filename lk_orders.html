@@ -571,109 +571,150 @@
 					<div class="cont">
 						<div class="centent-wrap__flex _flex">
 							<div class="centent-wrap__wrap">
-								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> Заказ</div>
+								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Заказы</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
 									<aside class="aside-catalog aside-catalog_inner">
 										<div class="aside-catalog__wrap">
-											<div class="aside-catalog__list">
+											<div class="aside-catalog__titlesmall">Личный кабинет</div>
+
+											<div class="aside-catalog__list aside-catalog__list_pad">
 												<div>
-													<a href="/baron">О магазине</a>
+													<a class="active">Заказы</a>
 												</div>
 												<div>
-													<a href="/">Режим работы</a>
+													<a href="/baron">Личные данные</a>
 												</div>
 												<div>
-													<a class="active">Заказ</a>
+													<a href="/baron">Адреса</a>
 												</div>
 												<div>
-													<a href="/baron">Доставка</a>
+													<a href="/">Изменение пароля</a>
 												</div>
 												<div>
-													<a href="/baron">Скидки<span> для пенсионеров, инвалидов, сирот и ветеранов ВОВ</span></a>
+													<a href="/">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
-												<div>
-													<a href="/baron">Оптовикам и дистрибьюторам</a>
-												</div>
-												<div>
-													<a href="/baron">Правила продажи</a>
-												</div>
-												<div>
-													<a href="/baron">Контакты</a>
-												</div>
+											</div>
+
+											<div class="aside-logout">
+												<a href="/" class="aside-logout__btn">
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow2"></use>
+													</svg>
+
+													Выйти
+												</a>
 											</div>
 										</div>
 									</aside>
 
 									<section class="centent-wrap__center">
-										<h1 class="page-title">Заказ</h1>
+										<div class="orders">
+											<div class="orders__item">
+												<div class="orders__item-name">Мы собрали и подготовили к отправке ваш заказ №11243565.</div>
 
-										<div class="text-block text-block_marg">
-											<h2>Оформление заказа</h2>
+												<div class="orders__item-desc">После подтвреждения заказ будет передан в доставку. После подтвреждения заказ будет передан в доставку.</div>
 
-											<p>
-												Как сделать заказ
-											</p>
+												<div class="orders__item-sum">Итоговая сумма к оплате: 2500 руб</div>
 
-											<ol>
-												<li>Выберите товары и добавьте их в корзину. Список и количество товаров редактируется в корзине или при оформлении заказа.</li>
-												<li>Откройте корзину и нажмите Перейти к оформлению заказа.</li>
-												<li>Укажите ваши данные, мобильный телефон и электронную почту.</li>
-												<li>Выберите способ получения. Для доставки необходимо указать адрес, дату и время получения.</li>
-												<li>Выберите способ оплаты.</li>
-												<li>Нажмите Оформить заказ.</li>
-											</ol>
+												<div class="orders__item-bot _flex">
+													<button type="button" class="orders__item-btn">Перейти к заказу</button>
 
-											<p>
-												Покупки в интернет-магазине доступны как для авторизованных пользователей, так незарегистрированным покупателям. Авторизованным покупателям доступен личный кабинет в котором хранится история заказов и адрес доставки.
-											</p>
+													<div class="orders__item-date">10.10.2024</div>
+												</div>
+											</div>
 
-											<blockquote>
-												Стоимость доставки рассчитывается автоматически и зависит от общей суммы товаров в заказе.
-												<br>
-												Дата и время доставки рассчитываются автоматически в зависимости от текущего времени оформления заказа.
-											</blockquote>
+											<div class="orders__item">
+												<div class="orders__item-name">Заказ №216681 ожидает отзыв</div>
 
-											<p>
-												После оформления заказа:
-											</p>
+												<div class="orders__item-bot _flex">
+													<button type="button" class="orders__item-btn">Оставить отзыв</button>
 
-											<ul>
-												<li>вам придёт СМС с номером заказа на указанный мобильный номер</li>
-												<li>на электронную почту будет отправлено письмо-подтверждение с номером заказа, вашими данными и перечнем продуктов, которые вы заказали</li>
-											</ul>
+													<a href="/" class="orders__item-ignore">скрыть уведомление</a>
 
-											<p>
-												Пожалуйста, запомните номер вашего заказа. Он понадобится в случае возникновения вопросов о доставке и работе интернет-магазина.
-											</p>
+													<div class="orders__item-date">10.10.2024</div>
+												</div>
+											</div>
+										</div>
 
-											<h2>Обработка заказа</h2>
+										<div class="my-orders my-orders_marg">
+											<div class="main-title">Мои заказы</div>
 
-											<p>
-												После оформления заказ передается на сборку.
-											</p>
+											<div class="my-orders__items">
+												<div class="my-orders__item">
+													<div class="my-orders__top _flex">
+														<div class="my-orders__top-flex _flex">
+															<div class="my-orders__name">Заказ №216681</div>
 
-											<p>
-												После сборки заказа вам позвонит менеджер, чтобы:
-											</p>
+															<div class="my-orders__sticker">выполнен</div>
+														</div>
 
-											<ul>
-												<li>подтвердить актуальность доставки</li>
-												<li>сообщить список товаров и итоговую стоимость заказа</li>
-												<li>уточнить, в какой временной промежуток вам удобнее получить заказ</li>
-											</ul>
+														<div class="my-orders__notice">+2 уведомления</div>
+													</div>
 
-											<p>
-												Будьте на связи. После подтверждения заказ передается курьеру для доставки.
-											</p>
+													<div class="my-orders__flex _flex">
+														<div class="my-orders__flex-coll">
+															<div class="my-orders__date">Дата оформления: <span>10.10.2024</span></div>
+															<div class="my-orders__sum">Сумма: <span>99 999 ₸</span></div>
+														</div>
 
-											<blockquote>Cтоимость заказа может измениться после того, как мы проверим наличие товара и соберём вашу покупку. </blockquote>
+														<button type="button" class="my-orders__btn">
+															Детали заказа
+															<svg>
+																<use xlink:href="images/sprite.svg#arrow2"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
 
-											<h2>Изменить заказ</h2>
+												<div class="my-orders__item">
+													<div class="my-orders__top _flex">
+														<div class="my-orders__top-flex _flex">
+															<div class="my-orders__name">Заказ №216681</div>
 
-											<p>
-												Изменить заказ вы можете до 88:000 дня доставки, позвонив по номеру <a href="tel:+77273171000">+7 727 317-10-00</a> или написав в Вотсап на номер&nbsp;<a href="tel:+77776263717">+7 777 626-37-17</a>
-											</p>
+															<div class="my-orders__sticker">выполнен</div>
+														</div>
+													</div>
+
+													<div class="my-orders__flex _flex">
+														<div class="my-orders__flex-coll">
+															<div class="my-orders__date">Дата оформления: <span>10.10.2024</span></div>
+															<div class="my-orders__sum">Сумма: <span>99 999 ₸</span></div>
+														</div>
+
+														<button type="button" class="my-orders__btn">
+															Детали заказа
+															<svg>
+																<use xlink:href="images/sprite.svg#arrow2"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="my-orders__item">
+													<div class="my-orders__top _flex">
+														<div class="my-orders__top-flex _flex">
+															<div class="my-orders__name">Заказ №216681</div>
+
+															<div class="my-orders__sticker">выполнен</div>
+														</div>
+													</div>
+
+													<div class="my-orders__flex _flex">
+														<div class="my-orders__flex-coll">
+															<div class="my-orders__date">Дата оформления: <span>10.10.2024</span></div>
+															<div class="my-orders__sum">Сумма: <span>99 999 ₸</span></div>
+														</div>
+
+														<button type="button" class="my-orders__btn">
+															Детали заказа
+															<svg>
+																<use xlink:href="images/sprite.svg#arrow2"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</section>
 								</div>

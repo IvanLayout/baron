@@ -74,6 +74,44 @@
 	}
 
 
+	.orders__item{
+		padding-right: 19px;
+		padding-left: 33px;
+		padding-top: 48px;
+	}
+
+	.orders__item-date{
+		position: absolute;
+		left: 33px;
+		top: 23px;
+	}
+
+
+	.my-orders__item{
+		padding-left: 19px;
+	}
+
+	.my-orders__name{
+		width: 100%;
+		margin-bottom: 5px;
+		margin-right: 0;
+	}
+	
+	.my-orders__flex{
+		flex-wrap: wrap;
+	}
+
+	.my-orders__flex-coll{
+		width: 100%;
+		padding-bottom: 7px;
+		border-bottom: 1px solid #EBE8E5;
+	}
+
+	.my-orders__btn{
+		margin: 14px 0 0;
+	}
+
+
 	.footer-subscribe{
 		flex-wrap: wrap;
 	}

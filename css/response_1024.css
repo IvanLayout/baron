@@ -661,11 +661,11 @@
 	}
 
 
-	.aside-ctalog{
+	.aside-catalog{
 		display: none;
 	}
 
-	.aside-ctalog_inner{
+	.aside-catalog_inner{
 		display: block;
 		width: calc(100% + 32px);
 		padding-top: 5px;
@@ -675,13 +675,13 @@
 		margin-right: -16px;
 	}
 
-	.aside-ctalog__wrap{
+	.aside-catalog__wrap{
 		max-width: none;
 		padding-bottom: 16px;
 		padding-top: 15px;
 	}
 
-	.aside-ctalog_inner .aside-ctalog__wrap{
+	.aside-catalog_inner .aside-catalog__wrap{
 		padding-top: 10px;
 		padding-bottom: 10px;
 		width: 100%;
@@ -694,16 +694,16 @@
 		background: #fff;
 	}
 
-	.aside-ctalog_inner .aside-ctalog__wrap._fixed{
+	.aside-catalog_inner .aside-catalog__wrap._fixed{
 		position: fixed;
 		top: 54px;
 	}
 
-	.aside-ctalog__titlesmall{
+	.aside-catalog__titlesmall{
 		display: none;
 	}
 
-	.aside-ctalog__list{
+	.aside-catalog__list{
 		margin: 0 -16px;
 		width: calc(100% + 32px);
 		padding: 0 16px;
@@ -716,20 +716,20 @@
 		overflow-x: auto;
 	}
 
-	.aside-ctalog__list::-webkit-scrollbar{
+	.aside-catalog__list::-webkit-scrollbar{
 		display: none;
 	}
 
-	.aside-ctalog__list div{
+	.aside-catalog__list div{
 		flex-shrink: 0;
 		white-space: nowrap;
 	}
 
-	.aside-ctalog__list div + div{
+	.aside-catalog__list div + div{
 		margin: 0 0 0 8px;
 	}
 
-	.aside-ctalog__list a{
+	.aside-catalog__list a{
 		background-color: #F4F1EF;
 		border-radius: 3px;
 		line-height: 34px;
@@ -737,11 +737,11 @@
 		white-space: nowrap;
 	}
 	
-	.aside-ctalog__list a.active::before{
+	.aside-catalog__list a.active::before{
 		display: none;
 	}
 
-	.aside-ctalog__list a span{
+	.aside-catalog__list a span{
 		display: none;
 	}
 

@@ -574,11 +574,11 @@
 								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Скидки</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
-									<aside class="aside-ctalog aside-ctalog_inner">
-										<div class="aside-ctalog__wrap">
-											<div class="aside-ctalog__titlesmall">Изменение пароля</div>
+									<aside class="aside-catalog aside-catalog_inner">
+										<div class="aside-catalog__wrap">
+											<div class="aside-catalog__titlesmall">Личный кабинет</div>
 
-											<div class="aside-ctalog__list aside-ctalog__list_pad">
+											<div class="aside-catalog__list aside-catalog__list_pad">
 												<div>
 													<a href="/baron">Заказы</a>
 												</div>
@@ -626,7 +626,9 @@
 												</p>
 
 												<p>
-													Если вы делаете заказ по телефону – подскажите нашему менеджеру, что у вас есть льготная скидка. Во время доставки курьер запросит подтверждающие документы. Заказ должен быть оформлен и принят человеком, на кого распространяется скидка.
+													Если вы делаете заказ по телефону – подскажите нашему менеджеру, что у вас есть льготная скидка.
+													<br>
+													Во время доставки курьер запросит подтверждающие документы. Заказ должен быть оформлен и принят человеком, на кого распространяется скидка.
 												</p>
 
 												<p>
@@ -821,25 +823,5 @@
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
-
-		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
-		<script>
-			//карта
-			ymaps.ready(init);
-			function init(){
-				var myMap = new ymaps.Map("map", {
-					center: [43.30293499573415, 77.21651881751883],
-					zoom: 14
-				}),
-				myPlacemark = new ymaps.Placemark([43.30293499573415, 77.21651881751883],{
-				}, {
-					iconImageHref: 'images/map_marker.svg',
-					iconImageSize: [44, 45],
-					iconImageOffset: [-22, -22],
-				})
-
-				myMap.geoObjects.add(myPlacemark)
-			}
-		</script>
 	</body>
 </html>

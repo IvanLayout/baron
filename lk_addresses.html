@@ -571,14 +571,14 @@
 					<div class="cont">
 						<div class="centent-wrap__flex _flex">
 							<div class="centent-wrap__wrap">
-								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Скидки</div>
+								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Адреса</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
-									<aside class="aside-ctalog aside-ctalog_inner">
-										<div class="aside-ctalog__wrap">
-											<div class="aside-ctalog__titlesmall">Изменение пароля</div>
+									<aside class="aside-catalog aside-catalog_inner">
+										<div class="aside-catalog__wrap">
+											<div class="aside-catalog__titlesmall">Личный кабинет</div>
 
-											<div class="aside-ctalog__list aside-ctalog__list_pad">
+											<div class="aside-catalog__list aside-catalog__list_pad">
 												<div>
 													<a href="/baron">Заказы</a>
 												</div>
@@ -586,13 +586,13 @@
 													<a href="/baron">Личные данные</a>
 												</div>
 												<div>
-													<a href="/baron">Адреса</a>
+													<a class="active">Адреса</a>
 												</div>
 												<div>
 													<a href="/">Изменение пароля</a>
 												</div>
 												<div>
-													<a class="active">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
+													<a href="/">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
 											</div>
 
@@ -609,59 +609,95 @@
 									</aside>
 
 									<section class="centent-wrap__center">
-										<h1 class="page-title page-title_small">Скидки инвалидам, пенсионерам и ветеранам</h1>
+										<h1 class="page-title page-title_small">Мои адреса</h1>
 
-										<section class="about-sale">
-											<div class="text-block">
-												<p>
-													В нашем интернет-магазине действуют скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ.
-												</p>
+										<section class="addresses">
+											<div class="addresses__desc">В зависимости от адреса стоимость доставки может меняться</div>
 
-												<blockquote>
-													Скидка для пенсионеров, инвалидов и сирот — 10%. Скидка для ветеранов ВОВ — 15%
-												</blockquote>
+											<div class="addresses__items">
+												<div class="address-radio">
+													<label class="address-radio__label">
+														<input type="radio" name="address" checked>
 
-												<p>
-													При оформлении заказа через интернет-магазин, вам нужно написать о том, что заказ оформлен лицом, имеющим льготную скидку в комментарии к заказу.
-												</p>
+														<span class="address-radio__wrap">
+															<span class="address-radio__info">
+																<span class="address-radio__top">
+																	<span class="address-radio__name">
+																		Москва, Московская Улица, 10к1
+																	</span>
+	
+																	<span class="address-radio__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#edit"></use>
+																		</svg>
+																	</span>
+																</span>
 
-												<p>
-													Если вы делаете заказ по телефону – подскажите нашему менеджеру, что у вас есть льготная скидка.Во время доставки курьер запросит подтверждающие документы. Заказ должен быть оформлен и принят человеком, на кого распространяется скидка.
-												</p>
+																<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+															</span>
 
-												<p>
-													<b>Скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ не суммируются с другими скидками и акциями. Скидки также не распространяются на четверти свинины и заднюю ногу свинины.</b>
-												</p>
+															<span class="address-radio__main">адрес по умолчанию</span>
+														</span>
+													</label>
+												</div>
+												<div class="address-radio">
+													<label class="address-radio__label">
+														<input type="radio" name="address">
+
+														<span class="address-radio__wrap">
+															<span class="address-radio__info">
+																<span class="address-radio__top">
+																	<span class="address-radio__name">
+																		Москва, Московская Улица, 10к1
+																	</span>
+	
+																	<span class="address-radio__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#edit"></use>
+																		</svg>
+																	</span>
+																</span>
+
+																<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+															</span>
+														</span>
+													</label>
+												</div>
+												<div class="address-radio">
+													<label class="address-radio__label">
+														<input type="radio" name="address">
+
+														<span class="address-radio__wrap">
+															<span class="address-radio__info">
+																<span class="address-radio__top">
+																	<span class="address-radio__name">
+																		Москва, Московская Улица, 10к1
+																	</span>
+	
+																	<span class="address-radio__icon">
+																		<svg>
+																			<use xlink:href="images/sprite.svg#edit"></use>
+																		</svg>
+																	</span>
+																</span>
+
+																<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+															</span>
+														</span>
+													</label>
+												</div>
 											</div>
 
-											<form action="" class="form about-sale__form">
-												<div class="about-sale__title">Подтверждение права на скидку</div>
-
-												<div class="about-sale__desc">Напишите номер пенсионного удостоверения или прикрепите фото документа, подтверждающего право на скидку</div>
-
-												<div class="about-sale__wrap">
-													<div class="form__line">
-														<div class="form__label">Номер пенсионного удостоверения</div>
-	
-														<div class="form__field">
-															<input type="text" value="" placeholder="123-456-781-90" data-mask="999-999-999-99" class="form__input form__input_pension">
-														</div>
-													</div>
-
-													<div class="file-selection">
-														<input type="file" name="" id="file1">
-								
-														<label for="file1" class="file-selection__path">
-															<span class="file-selection__path-icon">
-																<svg>
-																	<use xlink:href="images/sprite.svg#add"></use>
-																</svg>
-															</span>
-															<span class="file-selection__path-name">Прикрепить фото документа</span>
-														</label>
-													</div>
-												</div>
-											</form>
+											<div class="addresses__add addresses__add_marg">
+												<button type="button" class="addresses__add-btn">
+													<span class="addresses__add-icon">
+														<svg>
+															<use xlink:href="images/sprite.svg#add"></use>
+														</svg>
+													</span>
+													<span>добавить адрес доставки</span>
+												</button>
+											</div>
 										</section>
 									</section>
 								</div>
@@ -821,25 +857,5 @@
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
-
-		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
-		<script>
-			//карта
-			ymaps.ready(init);
-			function init(){
-				var myMap = new ymaps.Map("map", {
-					center: [43.30293499573415, 77.21651881751883],
-					zoom: 14
-				}),
-				myPlacemark = new ymaps.Placemark([43.30293499573415, 77.21651881751883],{
-				}, {
-					iconImageHref: 'images/map_marker.svg',
-					iconImageSize: [44, 45],
-					iconImageOffset: [-22, -22],
-				})
-
-				myMap.geoObjects.add(myPlacemark)
-			}
-		</script>
 	</body>
 </html>
