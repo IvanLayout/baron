@@ -589,15 +589,15 @@
 													<a href="/baron">Адреса</a>
 												</div>
 												<div>
-													<a href="/">Изменение пароля</a>
+													<a href="/baron">Изменение пароля</a>
 												</div>
 												<div>
-													<a href="/">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
+													<a href="/baron">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
 											</div>
 
 											<div class="aside-logout">
-												<a href="/" class="aside-logout__btn">
+												<a href="/baron" class="aside-logout__btn">
 													<svg>
 														<use xlink:href="images/sprite.svg#arrow2"></use>
 													</svg>
@@ -616,13 +616,33 @@
 													<div class="info-order__sticker">выполнен</div>
 												</div>
 
-												<a href="/" class="info-order__receipt">
+												<a href="/baron" class="info-order__receipt">
 													<span>Чек за заказ</span>
 												</a>
 											</div>
 
 											<div class="info-order__flex _flex">
 												<div class="info-order__coll">
+													<div class="rate-order rate-order__marg">
+														<div class="rate-order__flex _flex">
+															<div class="rate-order__title">Оцените заказ</div>
+
+															<div class="rating-js rate-order__rating-js">
+																<div class="rating-js__star">
+																	<input name="adv1" type="radio" class="wow" value="1">
+																	<input name="adv1" type="radio" class="wow" value="2">
+																	<input name="adv1" type="radio" class="wow" value="3">
+																	<input name="adv1" type="radio" class="wow" value="4">
+																	<input name="adv1" type="radio" class="wow" value="5">
+																</div>
+															</div>
+
+															<div class="rate-order__btn">
+																<button class="rate-order__btn-leave">Оставить отзыв</button>
+															</div>
+														</div>
+													</div>
+
 													<div class="info-order__items">
 														<div class="info-order__item _active">
 															<button type="button" class="info-order__open">
@@ -756,23 +776,23 @@
 															<div class="info-order__data">
 																<div class="order-products">
 																	<div class="order-products__produt _flex">
-																		<a href="/" class="order-products__produt-photo">
+																		<a href="/baron" class="order-products__produt-photo">
 																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
 																		</a>
 
 																		<div class="order-products__produt-name">
-																			<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
 																		</div>
 
 																		<div class="order-products__produt-price">99 999 ₸</div>
 																	</div>
 																	<div class="order-products__produt _flex">
-																		<a href="/" class="order-products__produt-photo">
+																		<a href="/baron" class="order-products__produt-photo">
 																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
 																		</a>
 
 																		<div class="order-products__produt-name">
-																			<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
 																		</div>
 
 																		<div class="order-products__produt-price">99 999 ₸</div>
@@ -839,7 +859,7 @@
 														</div>
 													</div>
 
-													<a href="/" class="order-repeat">
+													<a href="/baron" class="order-repeat">
 														<span>Повторить заказ</span>
 													</a>
 												</div>
@@ -1000,6 +1020,7 @@
 
 		<script src="js/nice-select.js"></script>
 		<script src="js/inputmask.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

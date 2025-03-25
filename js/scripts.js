@@ -424,6 +424,11 @@ $(() => {
 			input.val(inputVal + step + inputText)
 		}
 	})
+
+	// Звездочки отзыва
+	if ($('.rating-js').length){
+		$('input.wow').rating()
+	}
 });
 
 

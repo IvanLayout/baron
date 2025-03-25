@@ -571,7 +571,7 @@
 					<div class="cont">
 						<div class="centent-wrap__flex _flex">
 							<div class="centent-wrap__wrap">
-								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Скидки</div>
+								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> Заказы</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
 									<aside class="aside-catalog aside-catalog_inner">
@@ -580,7 +580,7 @@
 
 											<div class="aside-catalog__list aside-catalog__list_pad">
 												<div>
-													<a href="/baron">Заказы</a>
+													<a class="active">Заказы</a>
 												</div>
 												<div>
 													<a href="/baron">Личные данные</a>
@@ -592,7 +592,7 @@
 													<a href="/baron">Изменение пароля</a>
 												</div>
 												<div>
-													<a class="active">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
+													<a href="/baron">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
 											</div>
 
@@ -609,61 +609,249 @@
 									</aside>
 
 									<section class="centent-wrap__center">
-										<h1 class="page-title page-title_small">Скидки инвалидам, пенсионерам и ветеранам</h1>
+										<section class="info-order">
+											<div class="info-order__top _flex">
+												<div class="info-order__top-flex _flex">
+													<div class="main-title info-order__main-title">Заказ 241101-216681</div>
+													<div class="info-order__sticker _way">в пути</div>
+												</div>
 
-										<section class="about-sale">
-											<div class="text-block">
-												<p>
-													В нашем интернет-магазине действуют скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ.
-												</p>
-
-												<blockquote>
-													Скидка для пенсионеров, инвалидов и сирот — 10%. Скидка для ветеранов ВОВ — 15%
-												</blockquote>
-
-												<p>
-													При оформлении заказа через интернет-магазин, вам нужно написать о том, что заказ оформлен лицом, имеющим льготную скидку в комментарии к заказу.
-												</p>
-
-												<p>
-													Если вы делаете заказ по телефону – подскажите нашему менеджеру, что у вас есть льготная скидка.
-													<br>
-													Во время доставки курьер запросит подтверждающие документы. Заказ должен быть оформлен и принят человеком, на кого распространяется скидка.
-												</p>
-
-												<p>
-													<b>Скидки для пенсионеров, инвалидов, сирот и ветеранов ВОВ не суммируются с другими скидками и акциями. Скидки также не распространяются на четверти свинины и заднюю ногу свинины.</b>
-												</p>
+												<a href="/baron" class="info-order__receipt">
+													<span>Чек за заказ</span>
+												</a>
 											</div>
 
-											<form action="" class="form about-sale__form">
-												<div class="about-sale__title">Подтверждение права на скидку</div>
+											<div class="info-order__flex _flex">
+												<div class="info-order__coll">
+													<div class="info-order__way info-order__way_marg _flex">
+														<div class="info-order__way-desc">Ваш заказ собран и готов к отправке</div>
 
-												<div class="about-sale__desc">Напишите номер пенсионного удостоверения или прикрепите фото документа, подтверждающего право на скидку</div>
+														<button type="button" class="btn-black info-order__way-btn">Подтвердить</button>
 
-												<div class="about-sale__wrap">
-													<div class="form__line">
-														<div class="form__label">Номер пенсионного удостоверения</div>
-	
-														<div class="form__field">
-															<input type="text" value="" placeholder="123-456-781-90" data-mask="999-999-999-99" class="form__input form__input_pension">
+														<div class="info-order__way-date">10.10.2024</div>
+													</div>
+
+													<div class="info-order__items">
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Детали заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="about-order">
+																	<div class="about-order__line _flex">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _status">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#imp"></use>
+																				</svg>
+
+																				Статус оплаты
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val _red">
+																				<span>требуется доплата <span>99 999 ₸</span></span>
+																			</div>
+																		</div>
+
+																		<button type="button" class="order-pay">Оплатить</button>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Номер заказа
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>241101-216681</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Дата оформления
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>10.10.2024</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ оплаты
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Картой</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ получения
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Доставка</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Адрес
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Москва, Московская Улица, 10к1</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line about-order__line_comment">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _flex">
+																				<span>Комментарий к заказу</span>
+																				<button class="about-order__edit">
+																					<svg>
+																						<use xlink:href="images/sprite.svg#edit"></use>
+																					</svg>
+																				</button>
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Обязательно позвонить в домофон, оставить у двери</span>
+																			</div>
+																		</div>
+
+																		<form class="form-comment" id="order-comment">
+																			<div class="form-comment__line">
+																				<div class="form-comment__label">Комментарий к заказу</div>
+
+																				<div class="form-comment__field _flex">
+																					<textarea class="form-comment__textarea">Обязательно позвонить в домофон, оставить у двери</textarea>
+
+																					<button type="reset" class="form-comment__reset">
+																						<svg>
+																							<use xlink:href="images/sprite.svg#close1"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+
+																			<div class="form-comment__desc">Комментарий водителю и курьеру, если нужно что-то учесть при доставке</div>
+
+																			<div class="form-comment__submit">
+																				<button type="submit" class="btn-black form-comment__submit-btn">Сохранить</button>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Товары в заказе
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-products">
+																	<div class="order-products__produt _flex">
+																		<a href="/baron" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																	<div class="order-products__produt _flex">
+																		<a href="/baron" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																История заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-history">
+																	<div class="order-history__item _active">
+																		<div class="order-history__item-val">Собран, в пути</div>
+																		
+																		<div class="order-history__item-date">9 ноября 188:445</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Отправлен на сборку</div>
+																		
+																		<div class="order-history__item-date">9 ноября 88:001</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Оформлен, Москва, Московская Улица, 10к1</div>
+																		
+																		<div class="order-history__item-date">8 ноября 118:440</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="info-order__colr">
+													<div class="info-order__colr-title">Итого</div>
+
+													<div class="info-order__total">
+														<div class="info-order__total-item _flex">
+															<div class="info-order__total-name">Товары</div>
+															<div class="info-order__total-line"></div>
+															<div class="info-order__total-val">50 000 ₸</div>
+														</div>
+														<div class="info-order__total-item _flex">
+															<div class="info-order__total-name">Скидка</div>
+															<div class="info-order__total-line"></div>
+															<div class="info-order__total-val">-5 000 ₸</div>
+														</div>
+														<div class="info-order__total-item _flex">
+															<div class="info-order__total-name">Доставка</div>
+															<div class="info-order__total-line"></div>
+															<div class="info-order__total-val">1 000 ₸</div>
+														</div>
+														<div class="info-order__total-item _flex">
+															<div class="info-order__total-name">Общая сумма заказа</div>
+															<div class="info-order__total-line"></div>
+															<div class="info-order__total-val _big">99 999 ₸</div>
 														</div>
 													</div>
 
-													<div class="file-selection">
-														<input type="file" name="" id="file1">
-								
-														<label for="file1" class="file-selection__path">
-															<span class="file-selection__path-icon">
-																<svg>
-																	<use xlink:href="images/sprite.svg#add"></use>
-																</svg>
-															</span>
-															<span class="file-selection__path-name">Прикрепить фото документа</span>
-														</label>
-													</div>
+													<a href="/baron" class="order-repeat">
+														<span>Повторить заказ</span>
+													</a>
 												</div>
-											</form>
+											</div>
 										</section>
 									</section>
 								</div>
@@ -820,6 +1008,7 @@
 
 		<script src="js/nice-select.js"></script>
 		<script src="js/inputmask.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>

@@ -904,6 +904,11 @@
 	}
 
 
+	.info-order__way-btn{
+		line-height: 30px;
+	}
+
+
 	.footer__phones{
 		margin-left: 24px;
 	}

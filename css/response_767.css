@@ -499,6 +499,46 @@
 		border-top: none;
 	}
 
+	.form-comment__textarea{
+		height: 68px;
+	}
+
+
+	.rate-order{
+		padding-left: 19px;
+		padding-bottom: 27px;
+	}
+
+	.rate-order__title{
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.rate-order__rating-js{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+
+	.rate-order__btn{
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.rating-cancel,
+	.star-rating{
+		width: 34px;
+		height: 34px;
+	}
+
+	.rating-cancel a,
+	.star-rating a{
+		width: 34px;
+		height: 34px;
+	}
+
 
 	.footer{
 		padding-top: 30px;

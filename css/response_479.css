@@ -116,6 +116,23 @@
 		display: block;
 	}
 
+	.form-comment__submit-btn{
+		width: 100%;
+	}
+
+
+	.info-order__way-btn{
+		width: 100%;
+		margin-top: 17px;
+	}
+
+	.info-order__way-date{
+		width: 100%;
+		order: -1;
+		margin-top: 0;
+		margin-bottom: 6px;
+	}
+
 
 	.footer-subscribe{
 		flex-wrap: wrap;
