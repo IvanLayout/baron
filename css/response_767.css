@@ -439,6 +439,67 @@
 	}
 
 
+	.info-order__coll{
+		width: 100%;
+		max-width: none;
+	}
+
+	.info-order__receipt{
+		width: 42px;
+		height: 34px;
+		padding: 0;
+	}
+
+	.info-order__receipt::before{
+		left: 50%;
+		margin-left: -12px;
+	}
+
+	.info-order__receipt span{
+		display: none;
+	}
+	
+	.info-order__main-title{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.info-order__sticker{
+		margin-top: 7px;
+	}
+
+	.order-products__produt-photo{
+		margin-right: 18px;
+	}
+
+	.about-order__line._flex{
+		flex-wrap: wrap;
+	}
+
+	.order-pay{
+		width: 100%;
+		margin: 14px 0 0;
+		line-height: 40px;
+	}
+
+	.info-order__colr{
+		width: calc(100% + 32px);
+		max-width: none;
+		margin: 42px -16px 0;
+		padding: 22px 16px 0;
+		border-top: 1px solid #EBE8E5;
+	}
+
+	.info-order__colr-title{
+		font-size: 22px;
+	}
+
+	.info-order__total{
+		padding-top: 0;
+		border-top: none;
+	}
+
+
 	.footer{
 		padding-top: 30px;
 		padding-bottom: 25px;

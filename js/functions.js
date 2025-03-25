@@ -260,6 +260,16 @@ $(() => {
 		}
 	})
 
+	$('body').on('click', '.info-order__open', function (e) {
+		e.preventDefault()
+
+		if ($(this).closest('.info-order__item').hasClass('_active')) {
+			$(this).closest('.info-order__item').removeClass('_active')
+		} else {
+			$(this).closest('.info-order__item').addClass('_active')
+		}
+	})
+
 
 	$('body').on('click', '.open-comment', function (e) {
 		e.preventDefault()
@@ -355,6 +365,23 @@ $(() => {
 			}
 		}, 0)
 	})
+
+
+	$('body').on('click', '.about-order__edit', function (e) {
+		e.preventDefault()
+
+		$(this).closest('.about-order__line_comment').addClass('_active')
+	})
+
+	$('body').on('submit', '#order-comment', function (e) {
+		e.preventDefault()
+
+		let valTextarea = $(this).find('textarea').val()
+		$(this).closest('.about-order__line_comment').find('.about-order__val').text(valTextarea)
+
+		$(this).closest('.about-order__line_comment').removeClass('_active')
+	})
+	
 })
 
 $(window).on('load', () => {

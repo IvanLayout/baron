@@ -112,6 +112,11 @@
 	}
 
 
+	.about-order__val span span{
+		display: block;
+	}
+
+
 	.footer-subscribe{
 		flex-wrap: wrap;
 	}

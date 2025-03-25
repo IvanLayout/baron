@@ -616,12 +616,201 @@
 													<div class="info-order__sticker">выполнен</div>
 												</div>
 
-												<a href="/" class="info-order__receipt">Чек за заказ</a>
+												<a href="/" class="info-order__receipt">
+													<span>Чек за заказ</span>
+												</a>
 											</div>
 
 											<div class="info-order__flex _flex">
 												<div class="info-order__coll">
-													
+													<div class="info-order__items">
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Детали заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="about-order">
+																	<div class="about-order__line _flex">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _status">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#imp"></use>
+																				</svg>
+
+																				Статус оплаты
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val _red">
+																				<span>требуется доплата <span>99 999 ₸</span></span>
+																			</div>
+																		</div>
+
+																		<button type="button" class="order-pay">Оплатить</button>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Номер заказа
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>241101-216681</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Дата оформления
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>10.10.2024</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ оплаты
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Картой</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ получения
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Доставка</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Адрес
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Москва, Московская Улица, 10к1</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line about-order__line_comment">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _flex">
+																				<span>Комментарий к заказу</span>
+																				<button class="about-order__edit">
+																					<svg>
+																						<use xlink:href="images/sprite.svg#edit"></use>
+																					</svg>
+																				</button>
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Обязательно позвонить в домофон, оставить у двери</span>
+																			</div>
+																		</div>
+
+																		<form class="form-comment" id="order-comment">
+																			<div class="form-comment__line">
+																				<div class="form-comment__label">Комментарий к заказу</div>
+
+																				<div class="form-comment__field _flex">
+																					<textarea class="form-comment__textarea">Обязательно позвонить в домофон, оставить у двери</textarea>
+
+																					<button type="reset" class="form-comment__reset">
+																						<svg>
+																							<use xlink:href="images/sprite.svg#close1"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+
+																			<div class="form-comment__desc">Комментарий водителю и курьеру, если нужно что-то учесть при доставке</div>
+
+																			<div class="form-comment__submit">
+																				<button type="submit" class="btn-black form-comment__submit-btn">Сохранить</button>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Товары в заказе
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-products">
+																	<div class="order-products__produt _flex">
+																		<a href="/" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																	<div class="order-products__produt _flex">
+																		<a href="/" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																История заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-history">
+																	<div class="order-history__item _active">
+																		<div class="order-history__item-val">Собран, в пути</div>
+																		
+																		<div class="order-history__item-date">9 ноября 188:445</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Отправлен на сборку</div>
+																		
+																		<div class="order-history__item-date">9 ноября 88:001</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Оформлен, Москва, Московская Улица, 10к1</div>
+																		
+																		<div class="order-history__item-date">8 ноября 118:440</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 
 												<div class="info-order__colr">
