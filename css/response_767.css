@@ -494,7 +494,7 @@
 		font-size: 22px;
 	}
 
-	.info-order__total{
+	.order-total{
 		padding-top: 0;
 		border-top: none;
 	}
@@ -618,5 +618,21 @@
 	.footer__policy{
 		width: 100%;
 		margin-top: 10px;
+	}
+
+	.footer_checkout .callback-btn{
+		margin-bottom: 23px;
+		order: -1;
+		margin-top: 0;
+	}
+
+	.footer_checkout .footer__copy{
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.footer_checkout .footer__policy{
+		margin-top: 15px;
+		text-align: center;
 	}
 }

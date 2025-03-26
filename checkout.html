@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Подключение шрифта Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/ion.rangeSlider.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1024.css" media="(max-width: 1024px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<!-- Шапка -->
+				<header class="header header_checkout">
+					<div class="header__info">
+						<div class="header__info-wrap">
+							<div class="cont _flex">
+								<button type="button" class="header__back">
+									<span>
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow3"></use>
+										</svg>
+										вернуться
+									</span>
+								</button>
+
+								<div class="header__logo">
+									<a href="/baron">
+										<img src="images/logo.svg" alt="">
+									</a>
+								</div>
+
+								<div class="header__checkout">Оформление заказа</div>
+
+								<div class="header-search header-search_checkout">
+									<div class="header-search__wrap">
+										<form action="" class="header-search__line _flex">
+											<input type="text" name="" value="" placeholder="Поиск товара" class="header-search__input">
+
+											<button type="submit" class="header-search__submit">
+												<svg>
+													<use xlink:href="images/sprite.svg#lupa"></use>
+												</svg>
+											</button>
+
+											<button type="button" class="header-search__close">
+												<svg>
+													<use xlink:href="images/sprite.svg#close1"></use>
+												</svg>
+											</button>
+										</form>
+
+										<div class="search-menu">
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat1.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Мясные продукты</span>
+												</a>
+											</div>
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link _sub">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat2.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Мясо</span>
+
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow1"></use>
+													</svg>
+												</a>
+
+												<div class="search-menu__submenu">
+													<div class="search-menu__submenu-item">
+														<a href="/baron" class="search-menu__submenu-link">Говядина</a>
+													</div>
+													<div class="search-menu__submenu-item">
+														<a href="/baron" class="search-menu__submenu-link">Молодой бычок</a>
+													</div>
+													<div class="search-menu__submenu-item">
+														<a href="/baron" class="search-menu__submenu-link">Свинина</a>
+													</div>
+												</div>
+											</div>
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat3.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Птица</span>
+												</a>
+											</div>
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat4.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Замороженные полуфабрикаты</span>
+												</a>
+											</div>
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat5.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Молочные продукты</span>
+												</a>
+											</div>
+											<div class="search-menu__item">
+												<a href="/baron" class="search-menu__link">
+													<span class="search-menu__icon">
+														<img data-src="images/ic_cat6.png" src="images/img_plug.png" alt="" class="lazyload">
+													</span>
+
+													<span>Яйцо</span>
+												</a>
+											</div>
+										</div>
+
+										<div class="header-search__bord">
+											<div class="header-search__title">Категории</div>
+
+											<div class="header-search__cats _flex">
+												<a href="/baron" class="header-search__cats-item">Мясо</a>
+												<a href="/baron" class="header-search__cats-item">Птица</a>
+												<a href="/baron" class="header-search__cats-item">Замороженные полуфабрикаты</a>
+												<a href="/baron" class="header-search__cats-item">Яйцо</a>
+												<a href="/baron" class="header-search__cats-item">Молочные продукты</a>
+											</div>
+
+											<div class="header-search__title">Товары</div>
+
+											<div class="products header-search__products">
+												<div class="products__grid _flex">
+													<div class="product">
+														<div class="product__top">
+															<a href="/baron" class="product__img">
+																<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+		
+														<div class="product__prices _flex">
+															<div class="product__price">99 999 ₸</div>
+															<div class="product__oldprice">99 999 ₸</div>
+														</div>
+		
+														<div class="product__name">
+															<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль <br>из баранины</a> <span>500 г</span>
+														</div>
+		
+														<div class="product__bot">
+															<button type="button" class="product__buy">В корзину</button>
+		
+															<div class="product__amount amount">
+																<div class="amount__val _flex">
+																	<button type="button" disabled class="amount__btn amount__btn_minus">
+																		<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+					
+																	<div class="amount__center">
+																		<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+		
+																		<div class="amount__sum">99 999 ₸</div>
+																	</div>
+					
+																	<button type="button" class="amount__btn amount__btn_plus">
+																		<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product">
+														<div class="product__top">
+															<a href="/baron" class="product__img">
+																<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+		
+														<div class="product__prices _flex">
+															<div class="product__price">99 999 ₸</div>
+															<div class="product__oldprice">99 999 ₸</div>
+														</div>
+		
+														<div class="product__name">
+															<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль <br>из баранины</a> <span>500 г</span>
+														</div>
+		
+														<div class="product__bot">
+															<button type="button" class="product__buy">В корзину</button>
+		
+															<div class="product__amount amount">
+																<div class="amount__val _flex">
+																	<button type="button" disabled class="amount__btn amount__btn_minus">
+																		<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+					
+																	<div class="amount__center">
+																		<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+		
+																		<div class="amount__sum">99 999 ₸</div>
+																	</div>
+					
+																	<button type="button" class="amount__btn amount__btn_plus">
+																		<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product">
+														<div class="product__top">
+															<a href="/baron" class="product__img">
+																<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+		
+														<div class="product__prices _flex">
+															<div class="product__price">99 999 ₸</div>
+															<div class="product__oldprice">99 999 ₸</div>
+														</div>
+		
+														<div class="product__name">
+															<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль <br>из баранины</a> <span>500 г</span>
+														</div>
+		
+														<div class="product__bot">
+															<button type="button" class="product__buy">В корзину</button>
+		
+															<div class="product__amount amount">
+																<div class="amount__val _flex">
+																	<button type="button" disabled class="amount__btn amount__btn_minus">
+																		<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+					
+																	<div class="amount__center">
+																		<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+		
+																		<div class="amount__sum">99 999 ₸</div>
+																	</div>
+					
+																	<button type="button" class="amount__btn amount__btn_plus">
+																		<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="product">
+														<div class="product__top">
+															<a href="/baron" class="product__img">
+																<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+															</a>
+														</div>
+		
+														<div class="product__prices _flex">
+															<div class="product__price">99 999 ₸</div>
+															<div class="product__oldprice">99 999 ₸</div>
+														</div>
+		
+														<div class="product__name">
+															<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль <br>из баранины</a> <span>500 г</span>
+														</div>
+		
+														<div class="product__bot">
+															<button type="button" class="product__buy">В корзину</button>
+		
+															<div class="product__amount amount">
+																<div class="amount__val _flex">
+																	<button type="button" disabled class="amount__btn amount__btn_minus">
+																		<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+					
+																	<div class="amount__center">
+																		<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3">
+		
+																		<div class="amount__sum">99 999 ₸</div>
+																	</div>
+					
+																	<button type="button" class="amount__btn amount__btn_plus">
+																		<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="header-search__more">
+												<a href="/baron" class="btn-more">
+													<span>
+														смотреть все
+														<svg>
+															<use xlink:href="images/sprite.svg#arrow2"></use>
+														</svg>
+													</span>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="header-search__overlay"></div>
+								</div>
+
+								<button type="button" class="open-search">
+									<svg>
+										<use xlink:href="images/sprite.svg#lupa"></use>
+									</svg>
+								</button>
+
+								<div class="mini-modal mini-modal_phones mini-modal_phones_checkout">
+									<button type="button" class="mini-modal__btn heade__phone">
+										<span>+7 727 317 10 00</span>
+	
+										<svg>
+											<use xlink:href="images/sprite.svg#arrow1"></use>
+										</svg>
+									</button>
+									
+									<div class="mini-modal__modal mini-modal__modal_phones">
+										<div class="">
+											<a href="tel:+77273171000">+7 727 317 10 00</a>
+										</div>
+										<div class="">
+											<a href="tel:+77273171000">+7 727 317 10 00</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="mini-overlay"></div>
+				<!-- End Шапка -->
+
+
+				<!-- Основная часть -->
+				<section class="centent-wrap">
+					<div class="cont">
+						<div class="centent-wrap__flex _flex">
+							<div class="centent-wrap__wrap">
+								<div class="centent-wrap__wrap-flex _flex">
+									<aside class="aside-catalog aside-catalog_inner"></aside>
+
+									<section class="centent-wrap__center">
+										<h1 class="page-title">Оформление заказа</h1>
+									</section>
+								</div>
+							</div>
+
+							<aside class="aside-cart aside-cart_full">
+								<div class="aside-cart__wrap">
+									<div class="aside-cart__top _flex">
+										<button type="button" class="aside-cart__close">
+											<img data-src="images/arrow-back.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</button>
+
+										<div class="aside-cart__title">Корзина</div>
+										
+										<button type="button" class="aside-cart__clear">
+											<svg>
+												<use xlink:href="images/sprite.svg#close1"></use>
+											</svg>
+											очистить
+										</button>
+									</div>
+
+									<div class="aside-cart__scroll">
+										<div class="main-title">Товары в корзине</div>
+	
+										<div class="cart-items">
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span>500 г</span>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Лопатка говядина зам.</a>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount cart-item__amount_middle amount">
+															<div class="amount__val _flex">
+																<button type="button" class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="2.5 кг" data-minimum="0.5" data-maximum="999" data-step="0.5" data-text=" кг" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span></span>500 г</span>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Лопатка говядина зам.</a>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount cart-item__amount_middle amount">
+															<div class="amount__val _flex">
+																<button type="button" class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="2.5 кг" data-minimum="0.5" data-maximum="999" data-step="0.5" data-text=" кг" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span>500 г</span>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Лопатка говядина зам.</a>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount cart-item__amount_middle amount">
+															<div class="amount__val _flex">
+																<button type="button" class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="2.5 кг" data-minimum="0.5" data-maximum="999" data-step="0.5" data-text=" кг" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span>500 г</span>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount amount">
+															<div class="amount__val _flex">
+																<button type="button" disabled class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="1" data-minimum="1" data-maximum="999" data-step="1" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cart-item _flex">
+												<a href="/baron" class="cart-item__img">
+													<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+
+												<div class="cart-item__info">
+													<div class="cart-item__name">
+														<a href="/baron">Лопатка говядина зам.</a>
+													</div>
+
+													<div class="cart-item__flex _flex">
+														<div class="cart-item__price">99 999 ₸</div>
+
+														<div class="cart-item__amount cart-item__amount_middle amount">
+															<div class="amount__val _flex">
+																<button type="button" class="amount__btn amount__btn_minus">
+																	<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+				
+																<div class="amount__center">
+																	<input type="text" value="2.5 кг" data-minimum="0.5" data-maximum="999" data-step="0.5" data-text=" кг" class="amount__input">
+																</div>
+				
+																<button type="button" class="amount__btn amount__btn_plus">
+																	<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="order-total order-total_marg">
+											<div class="order-total__item _flex">
+												<div class="order-total__name">Товары</div>
+												<div class="order-total__line"></div>
+												<div class="order-total__val">50 000 ₸</div>
+											</div>
+											<div class="order-total__item _flex">
+												<div class="order-total__name">Скидка</div>
+												<div class="order-total__line"></div>
+												<div class="order-total__val">-5 000 ₸</div>
+											</div>
+											<div class="order-total__item _flex">
+												<div class="order-total__name">Сертификат</div>
+												<div class="order-total__line"></div>
+												<div class="order-total__val">1 000 ₸</div>
+											</div>
+										</div>
+
+										<div class="checkout-total _flex">
+											<div class="checkout-total__name">Итого</div>
+
+											<div class="checkout-total__val">99 999 ₸</div>
+										</div>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+				<!-- End Основная часть -->
+			</div>
+
+
+			<!-- Подвал -->
+			<footer class="footer footer_checkout">
+				<div class="cont">
+					<div class="footer__bot _flex">
+						<div class="footer__copy">Baron Food &copy; 1999-2021</div>
+
+						<div class="footer__policy">
+							<a href="/baron">Политика конфиденциальности</a>
+						</div>
+
+						<div class="footer__phones _flex">
+							<a href="tel:+77273171000" class="footer__phone">+7 727 317 10 00</a>
+							<span class="footer__phones-sep"></span>
+							<a href="tel:+77470942829" class="footer__phone">+7 747 094 28 29</a>
+						</div>
+
+						<button type="button" data-content="modal-callback" class="callback-btn">Обратная связь</button>
+					</div>
+				</div>
+			</footer>
+			<!-- End Подвал -->
+		</div>
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="callBback_modal">
+			<img data-src="images/modal_logo.png" src="images/img_plug.png" alt="" class="lozad modal_logo">
+
+			<div class="modal_title">Заказать звонок</div>
+
+			<form action="" class="form">
+				<div class="line_flex flex">
+					<div class="line_form">
+						<input type="text" name="" value="" placeholder="Имя" class="input">
+					</div>
+
+					<div class="line_form">
+						<input type="tel" name="" value="" placeholder="Телефон" class="input">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить</button>
+				</div>
+
+				<div class="agree">Нажимая кнопку, вы соглашаетесь с <a href="/baron">Политикой конфиденциальности</a> и <a href="/baron">Условиями использования</a></div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/fancybox.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+
+		<script src="js/nice-select.js"></script>
+		<script src="js/inputmask.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
