@@ -540,6 +540,11 @@
 	}
 
 
+	.checkout-info__name{
+		width: 150px;
+	}
+
+
 	.footer{
 		padding-top: 30px;
 		padding-bottom: 25px;

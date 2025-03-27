@@ -134,6 +134,45 @@
 	}
 
 
+	.checkout-info__item{
+		display: block;
+	}
+
+	.checkout-info__name{
+		width: 100%;
+		margin-bottom: 13px;
+	}
+
+	.promo-code__apply {
+		margin-left: -95px;
+		margin-top: 9px;
+		width: 91px;
+		line-height: 28px;
+	}
+
+	.form .form__input_code {
+		padding-right: 102px;
+	}
+
+	.form__flex .form__line{
+		width: 100%;
+	}
+
+	.your-details__recipient{
+		margin: 21px 0 -18px;
+	}
+
+	.your-details__recipient .form__line{
+		margin-bottom: 18px;
+	}
+
+
+	.checkout-info .btn-gray{
+		padding: 0;
+		width: 100%;
+	}
+
+
 	.footer-subscribe{
 		flex-wrap: wrap;
 	}

@@ -157,7 +157,7 @@ $(() => {
 			}
 		}, 0)
 
-		$('body').addClass('_lock')
+		$('body').addClass('_lock-cart')
 	})
 
 	$('body').on('click', '.aside-cart__close', function(e) {
@@ -165,7 +165,7 @@ $(() => {
 
 		$('.aside-cart').removeClass('_show')
 
-		$('body').removeClass('_lock')
+		$('body').removeClass('_lock-cart')
 	})
 	
 
@@ -382,6 +382,17 @@ $(() => {
 		$(this).closest('.about-order__line_comment').removeClass('_active')
 	})
 	
+	$('.checkbox-range__label').click(function () {
+        let checkbox = $('#checkbox-recipient');
+
+        setTimeout(() => {
+            if (checkbox.prop("checked")) {
+				checkbox.closest('.your-details').find('.your-details__recipient').addClass("_show");
+            } else {
+                checkbox.closest('.your-details').find('.your-details__recipient').removeClass("_show");
+            }
+        }, 10);
+    });
 })
 
 $(window).on('load', () => {
