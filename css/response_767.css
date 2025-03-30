@@ -515,7 +515,7 @@
 		margin-left: 0;
 	}
 
-	.rate-order__rating-js{
+	.rate-order__rating_marg{
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 20px;
@@ -533,15 +533,73 @@
 		height: 34px;
 	}
 
-	.rating-cancel a,
-	.star-rating a{
-		width: 34px;
-		height: 34px;
-	}
-
 
 	.checkout-info__name{
 		width: 150px;
+	}
+
+	.form-review .star-rating{
+		width: 26px;
+		height: 26px;
+	}
+
+	.form-review .star-rating + .star-rating{
+		margin-left: 2px;
+	}
+
+	.form-review__ratings-item{
+		width: calc(100% - 8px);
+		padding-top: 21px;
+		padding-bottom: 21px;
+		justify-content: space-between;
+		margin-top: 8px;
+	}
+
+	.products-review__product-top{
+		display: block;
+		margin-bottom: 26px;
+	}
+	
+	.products-review__product-bord{
+		width: 100%;
+	}
+
+	.products-review__product-name{
+		max-width: none;
+	}
+
+	.products-review .form-review__totlal{
+		margin: 25px 0 0 0;
+	}
+
+	.products-review .form-review__totlal-title{
+		margin: 0 25px 0 0;
+	}
+
+	.form-review__totlal-title{
+		margin: 0 35px 0 25px;
+	}
+
+	.form-review__ratings{
+		margin-top: 22px;
+		margin-bottom: 25px;
+	}
+
+
+	.cookie-fix{
+		width: 100%;
+		border-radius: 0;
+		bottom: 0;
+		padding-left: 20px;
+	}
+
+	.cookie-fix__icon{
+		margin-right: 20px;
+	}
+
+	.cookie-fix__btn{
+		margin-left: 20px;
+		width: 110px;
 	}
 
 
@@ -639,5 +697,176 @@
 	.footer_checkout .footer__policy{
 		margin-top: 15px;
 		text-align: center;
+	}
+
+
+	.fancybox__slide
+	{
+		padding: 12px 0;
+	}
+	
+	.form_time .form__submit{
+		position: sticky;
+		bottom: -12px;
+		z-index: 10;
+	}
+
+	.info-obtaining{
+		position: relative;
+		padding-bottom: 65px;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.info-obtaining._big{
+		min-height: 770px;
+	}
+
+	.info-obtaining__coll{
+		padding-bottom: 0;
+		width: 100%;
+	}
+
+	.info-obtaining__coll-wrap{
+		min-height: 1px;
+		padding-bottom: 0;
+		position: static;
+	}
+
+	.info-obtaining .addresses{
+		max-width: none;
+	}
+
+	.addresses__items_scroll{
+		max-height: 408px;
+		margin-top: 0;
+	}
+
+	.info-obtaining__colr{
+		width: 100%;
+		margin-top: 20px;
+		display: none;
+		position: relative;
+		flex-grow: 1;
+	}
+
+	.info-obtaining__colr._show{
+		display: block;
+	}
+
+	.info-obtaining__map{
+		height: 453px;
+	}
+
+	.form__submit_abs{
+		position: absolute;
+		bottom: 5px;
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: 0;
+	}
+
+	.form__submit_abs .form__submit-btn_big{
+		line-height: 50px;
+	}
+
+	.radio-obtaining__text{
+		height: 40px;
+	}
+
+	.open-map{
+		display: block;
+		position: absolute;
+		bottom: 65px;
+		left: 0;
+		width: 100%;
+		height: 30px;
+		font: 500 13px/20px var(--second-family);
+		color: #262323;
+		transition: color .2s linear;
+		z-index: 10;
+	}
+
+	.open-map span{
+		position: relative;
+		display: inline-block;
+		padding-left: 25px;
+	}
+
+	.open-map svg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		fill: none;
+		stroke: currentColor;
+	}
+
+	.modal-list{
+		padding-bottom: 40px;
+	}
+
+	.modal-list._hide{
+		display: none;
+	}
+
+	.open-list{
+		position: absolute;
+		left: 10px;
+		bottom: 7px;
+		width: calc(100% - 20px);
+		background: #fff;
+		border-radius: 4px;
+		box-shadow: 0 1px 1px 0 rgba(103, 92, 86, 0.09), 0 2px 2px 0 rgba(103, 92, 86, 0.08), 0 5px 3px 0 rgba(103, 92, 86, 0.04), 0 8px 3px 0 rgba(103, 92, 86, 0.01), 0 13px 4px 0 rgba(103, 92, 86, 0);
+		height: 45px;
+		font: 500 13px/21px var(--second-family);
+		color: #262323;
+		z-index: 20;
+		display: block;
+	}
+
+	.open-list span{
+		position: relative;
+		display: inline-block;
+		padding-left: 29px;
+	}
+
+	.open-list svg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: block;
+		width: 21px;
+		height: 21px;
+		fill: none;
+		stroke: currentColor;
+	}
+
+	.no-adress{
+		margin-top: 58px;
+	}
+
+	.info-obtaining__coll .info-obtaining__map{
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 10px;
+		height: 200px;
+	}
+
+	.form_adress{
+		padding-bottom: 10px;
+	}
+
+	.fancybox__content.modal_big .carousel__button.is-close{
+		box-shadow: none;
+		width: 24px;
+		height: 24px;
+		top: 22px;
+		right: 10px;
 	}
 }

@@ -386,6 +386,15 @@
 	}
 
 
+	.info-obtaining__coll{
+		width: 400px;
+	}
+
+	.info-obtaining__colr{
+		width: calc(100% - 420px);
+	}
+
+
 	.footer__menu {
         width: 54%;
     }
@@ -401,5 +410,10 @@
 
 	.footer__phone{
 		font-size: 18px;
+	}
+
+
+	.info-obtaining__coll .info-obtaining__map{
+		width: calc(100vw - 470px);
 	}
 }

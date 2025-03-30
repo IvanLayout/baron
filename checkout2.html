@@ -453,12 +453,12 @@
 														<div class="checkout-info__item">
 															<div class="checkout-info__name">Адрес доставки</div>
 
-															<button type="button" class="btn-gray">Выбрать адрес</button>
+															<button type="button" data-content="#modal-obtaining" class="modal-btn btn-gray">Выбрать адрес</button>
 														</div>
 														<div class="checkout-info__item">
 															<div class="checkout-info__name">Дата и время получения</div>
 
-															<button type="button" class="btn-gray">Выбрать время</button>
+															<button type="button" data-content="#modal-time" class="modal-btn btn-gray">Выбрать время</button>
 														</div>
 													</div>
 												</div>
@@ -653,7 +653,7 @@
 
 												<div class="cart-item__info">
 													<div class="cart-item__name">
-														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span></span>500 г</span>
+														<a href="/baron">Колбаски гриль баранина с кинзой...</a> <span>500 г</span>
 													</div>
 
 													<div class="cart-item__flex _flex">
@@ -895,27 +895,828 @@
 		</div>
 
 
-		<section class="modal" id="callBback_modal">
-			<img data-src="images/modal_logo.png" src="images/img_plug.png" alt="" class="lozad modal_logo">
+		<section class="modal modal_small" id="modal-login">
+			<div class="login-sectors">
+				<div class="login-sectors__sector login-sectors__sector_login _show">
+					<div class="modal__title">Введите номер телефона</div>
 
-			<div class="modal_title">Заказать звонок</div>
+					<form action="" class="form modal__form" id="form-login">
+						<div class="form__label">Номер телефона</div>
 
-			<form action="" class="form">
-				<div class="line_flex flex">
-					<div class="line_form">
-						<input type="text" name="" value="" placeholder="Имя" class="input">
-					</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
 
-					<div class="line_form">
-						<input type="tel" name="" value="" placeholder="Телефон" class="input">
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь получать новости о новых <span>акциях и партнёрах</span>
+								</span>
+							</label>
+						</div>
+		
+						<div class="form__submit">
+							<!-- <button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Получить код</button> -->
+							<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Получить код</button>
+						</div>
+		
+						<div class="btn-bot">
+							<button type="button" class="btn-bord login-password">Войти по паролю</button>
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_password">
+					<button type="button" data-sector="login-sectors__sector_login" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
+
+					<div class="modal__title">Войти по логину и паролю</div>
+
+					<form action="" class="form modal__form">
+						<div class="form__label">Номер телефона</div>
+
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__label">Пароль</div>
+
+							<div class="form__field">
+								<input type="password" value="" placeholder="Введите пароль" class="form__input form__input_pass">
+
+								<button type="button" class="password-view">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye_off"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Войти</button>
+							</div>
+
+							<div class="btn-bot">
+								<button type="button" class="btn-bord">Не помню пароль</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_code">
+					<div class="modal__title">Введите код из смс</div>
+
+					<div class="code-info">Отправили 6-значный код на номер <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<form action="" class="form">
+						<div class="code-line">
+							<div class="code-line__flex _flex">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Войти</button>
+							</div>
+			
+							<div class="btn-bot">
+								<button type="button" class="btn-bord open-nocode">Не приходит код</button>
+							</div>
+						</div>
+
+						<div class="coder-repear">
+							<button type="button" class="coder-repear__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#repeat"></use>
+								</svg>
+								<span>Отправить еще раз</span>
+							</button>
+						</div>
+
+						<div class="coder-repear">
+							Запросить код повторно можно <br>через 59 секунд
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_nocode">
+					<button type="button" data-sector="login-sectors__sector_code" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
+
+					<div class="modal__title">Не приходит смс с кодом?</div>
+
+					<div class="code-info">Проверьте, нет ли ошибки в номере <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<div class="support-text support-text_bord">Все правильно? Тогда напишите нам на почту <a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a> или свяжитесь с нами <br>по телефону <a href="tel:+77273171000">+7 727 317 10 00</a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal modal_big" id="modal-obtaining">
+			<div class="info-obtaining _big _flex">
+				<div class="info-obtaining__coll">
+					<div class="info-obtaining__coll-wrap">
+						<form action="" class="form">
+							<div class="modal__title">Способ доставки</div>
+
+							<div class="radio-obtaining _flex">
+								<div class="radio-obtaining__item">
+									<label class="radio-obtaining__label _active" data-obtaining="#delivery">
+										<input type="radio" name="obtaining" checked>
+
+										<span class="radio-obtaining__text">
+											<span>Доставка</span>
+										</span>
+									</label>
+								</div>
+								<div class="radio-obtaining__item">
+									<label class="radio-obtaining__label" data-obtaining="#pickup">
+										<input type="radio" name="obtaining">
+
+										<span class="radio-obtaining__text">
+											<span>Самовывоз</span>
+										</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="info-obtaining__sector _show" id="delivery">
+								<div class="info-obtaining__title">Куда привезти заказ?</div>
+
+								<div class="info-obtaining__desc">В зависимости от адреса стоимость доставки может меняться</div>
+
+								<button type="button" data-content="#modal-add-adress" class="add-adress-delivery modal-btn2">
+									<span>
+										<svg>
+											<use xlink:href="images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+									добавить адрес доставки
+								</button> 
+
+								<div class="modal-list">
+									<div class="addresses addresses_bord">
+										<div class="addresses__items addresses__items_scroll">
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address" checked>
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="your-address">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top address-radio__top_edit">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+
+																<span class="address-radio__icon">
+																	<svg>
+																		<use xlink:href="images/sprite.svg#edit"></use>
+																	</svg>
+																</span>
+															</span>
+
+															<span class="address-radio__desc">Москва, Московская Улица, 10к1, подъезд 1, кв.128</span>
+														</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<button type="button" class="open-map">
+										<span>
+											<svg>
+												<use xlink:href="images/sprite.svg#marker"></use>
+											</svg>
+											Показать на карте
+										</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="info-obtaining__sector" id="pickup">
+								<div class="info-obtaining__title">Откуда будете забирать заказ?</div>
+
+								<div class="info-obtaining__desc">Выберите пункт самовывоза, и мы привезем туда ваши товары</div>
+
+								<div class="modal-list">
+									<div class="addresses">
+										<div class="addresses__items">
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="address-pickup">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+															</span>
+
+															<span class="address-radio__desc">ежедневно, 102:000 – 202:000</span>
+														</span>
+													</span>
+												</label>
+											</div>
+											<div class="address-radio">
+												<label class="address-radio__label">
+													<input type="radio" name="address-pickup">
+
+													<span class="address-radio__wrap">
+														<span class="address-radio__info">
+															<span class="address-radio__top">
+																<span class="address-radio__name">
+																	Москва, Московская Улица, 10к1
+																</span>
+															</span>
+
+															<span class="address-radio__desc">ежедневно, 102:000 – 202:000</span>
+														</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<button type="button" class="open-map">
+										<span>
+											<svg>
+												<use xlink:href="images/sprite.svg#marker"></use>
+											</svg>
+											Показать на карте
+										</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="form__submit form__submit_abs">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Выбрать адрес</button>
+							</div>
+						</form>
 					</div>
 				</div>
 
-				<div class="submit">
-					<button type="submit" class="submit_btn">Отправить</button>
+				<div class="info-obtaining__colr">
+					<div class="info-obtaining__map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab60db649eb78927bee9ea16468e74d9416abcb8761c2d0d2715ac2cbbbcbd125&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+
+					<button type="button" class="open-list">
+						<span>
+							<svg>
+								<use xlink:href="images/sprite.svg#list"></use>
+							</svg>
+							Показать списком
+						</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal modal_big" id="modal-add-adress">
+			<div class="info-obtaining _add _flex">
+				<div class="info-obtaining__coll">
+					<div class="info-obtaining__coll-wrap">
+						<div class="add-adress">
+							<div class="modal__title">Способ доставки</div>
+
+							<form action="" class="form form_adress">
+								<div class="form__line">
+									<div class="form__label">Город/населенный пункт, улица, дом<span>*</span></div>
+
+									<div class="form__field">
+										<input type="text" value="" placeholder="Адрес" class="form__input form__input_adress">
+
+										<button type="button" class="close-adresses">
+											<svg>
+												<use xlink:href="images/sprite.svg#close1"></use>
+											</svg>
+										</button>
+
+										<div class="dropdown-adresses">
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="info-obtaining__map">
+									<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab60db649eb78927bee9ea16468e74d9416abcb8761c2d0d2715ac2cbbbcbd125&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+								</div>
+
+								<div class="checkbox-range checkbox-range_marg">
+									<label class="checkbox-range__label checkbox-range__label_house">
+										<input type="checkbox" name="" id="private-house">
+
+										<span class="checkbox-range__text">
+											Частный дом
+										</span>
+									</label>
+								</div>
+
+								<div class="private-house">
+									<div class="private-house__flex _flex">
+										<div class="form__line">
+											<div class="form__label">Подъезд<span>*</span></div>
+
+											<div class="form__field">
+												<input type="text" value="" placeholder="Подъезд" class="form__input">
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Квартира<span>*</span></div>
+
+											<div class="form__field">
+												<input type="text" value="" placeholder="Квартира" class="form__input">
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Этаж<span>*</span></div>
+
+											<div class="form__field">
+												<input type="text" value="" placeholder="Этаж" class="form__input">
+											</div>
+										</div>
+										<div class="form__line">
+											<div class="form__label">Код домофона<span>*</span></div>
+
+											<div class="form__field">
+												<input type="text" value="" placeholder="Код" class="form__input">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__line">
+									<div class="form__field">
+										<textarea placeholder="Что еще важно знать курьеру?" class="form__textarea"></textarea>
+									</div>
+								</div>
+
+								<div class="checkbox-range">
+									<label class="checkbox-range__label">
+										<input type="checkbox" name="">
+
+										<span class="checkbox-range__text">
+											Сделать адресом по умолчанию
+										</span>
+									</label>
+								</div>
+
+								<div class="form__submit form__submit_abs">
+									<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Добавить адрес</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal" id="modal-time">
+			<div class="modal__title">Выберите время доставки</div>
+
+			<div class="modal__subtitle">Некоторые временные интервалы могут иметь наценку</div>
+
+			<form action="" class="form form_time">
+				<div class="select-time">
+					<div class="select-time__sector">
+						<div class="select-time__title">Сегодня, 10 декабря <span>99 999 ₸</span></div>
+
+						<div class="select-time__flex _flex">
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-time__sector">
+						<div class="select-time__title">Завтра, 11 декабря <span>99 999 ₸</span></div>
+
+						<div class="select-time__flex _flex">
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-time__sector">
+						<div class="select-time__title">Послезавтра, 12 декабря <span>99 999 ₸</span></div>
+
+						<div class="select-time__flex _flex">
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title _extra">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+							<div class="time-radio">
+								<label class="time-radio__label">
+									<input type="radio" name="time">
+
+									<span class="time-radio__info">
+										<span class="time-radio__title">100:000 - 122:000</span>
+
+										<span class="time-radio__desc">сегодня</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="agree">Нажимая кнопку, вы соглашаетесь с <a href="/baron">Политикой конфиденциальности</a> и <a href="/baron">Условиями использования</a></div>
+				<div class="form__submit form__submit_time">
+					<button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Выбрать</button>
+				</div>
 			</form>
 		</section>
 

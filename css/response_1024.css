@@ -1004,4 +1004,31 @@
 		height: 21px;
 		margin: 0 15px;
 	}
+
+
+	.info-obtaining__coll{
+		padding-left: 0;
+		width: calc(47% - 10px)
+	}
+
+	.info-obtaining__colr {
+		width: calc(53% - 10px);
+	}
+
+	.private-house__flex .form__line {
+		width: calc(100% / 2 - 11px);
+	}
+
+	.add-adress .checkbox-range{
+		margin-top: 24px;
+	}
+
+	.checkbox-range_marg {
+		margin-bottom: 24px;
+	}
+
+
+	.info-obtaining__coll .info-obtaining__map{
+		width: calc(113% - 10px);
+	}
 }

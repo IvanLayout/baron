@@ -178,6 +178,14 @@ $(() => {
 		})
 	})
 
+	$('.input-number').each(function(){
+		let datamask = $(this).data('mask');
+
+		$(this).inputmask(`${datamask}`, {
+			showMaskOnHover: false
+		})
+	})
+
 	$('.form__input_pension').each(function(){
 		let datamask = $(this).data('mask');
 
@@ -209,7 +217,11 @@ $(() => {
 		parent.find('.file-selection__path-name').text(val)
 
 		if(parent.find('.file-selection__path-name').text() == '') {
-			parent.find('.file-selection__path-name').text('Прикрепить фото документа')
+			let defoultText = parent.find('.file-selection__path-name').data('text')
+
+			console.log(defoultText)
+			
+			parent.find('.file-selection__path-name').html(defoultText)
 		}
 	})
 
@@ -318,7 +330,7 @@ $(() => {
 	Fancybox.defaults.placeFocusBack = false
 
 	Fancybox.defaults.template = {
-		closeButton: '<svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.6385 24.6392C24.0783 25.1994 23.1701 25.1994 22.61 24.6392L2.35996 4.38921C1.7998 3.82905 1.7998 2.92085 2.35996 2.36069C2.92012 1.80054 3.82832 1.80054 4.38848 2.36069L24.6385 22.6107C25.1986 23.1709 25.1986 24.079 24.6385 24.6392Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M2.35996 24.6392C1.7998 24.079 1.7998 23.1709 2.35996 22.6107L22.61 2.36069C23.1701 1.80054 24.0783 1.80054 24.6385 2.36069C25.1986 2.92085 25.1986 3.82905 24.6385 4.38921L4.38847 24.6392C3.82831 25.1994 2.92012 25.1994 2.35996 24.6392Z"/></svg>',
+		closeButton: '<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 3L3 11M3 3L11 11" stroke-linecap="round"/></svg>',
 	}
 
 	// Всплывающие окна
@@ -326,6 +338,15 @@ $(() => {
 		e.preventDefault()
 
 		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
+
+	$('body').on('click', '.modal-btn2', function (e) {
+		e.preventDefault()
 
 		Fancybox.show([{
 			src: $(this).data('content'),
@@ -363,7 +384,7 @@ $(() => {
 				$('.header-search__bord').removeClass('_show')
 				$('.search-menu').removeClass('_hide')
 			}
-		}, 0)
+		}, 10)
 	})
 
 
@@ -381,18 +402,138 @@ $(() => {
 
 		$(this).closest('.about-order__line_comment').removeClass('_active')
 	})
-	
-	$('.checkbox-range__label').click(function () {
-        let checkbox = $('#checkbox-recipient');
+
+	$('body').on('click', '.checkbox-range__label_recipient', function () {
+        let checkbox = $('#checkbox-recipient')
 
         setTimeout(() => {
             if (checkbox.prop("checked")) {
-				checkbox.closest('.your-details').find('.your-details__recipient').addClass("_show");
+				$('.your-details__recipient').addClass("_show")
             } else {
-                checkbox.closest('.your-details').find('.your-details__recipient').removeClass("_show");
+                $('.your-details__recipient').removeClass("_show")
             }
-        }, 10);
-    });
+        }, 10)
+    })
+
+	$('body').on('click', '.checkbox-range__label_house', function () {
+        let checkbox = $('#private-house')
+
+        setTimeout(() => {
+            if (checkbox.prop("checked")) {
+				$('.private-house').addClass("_hide")
+            } else {
+                $('.private-house').removeClass("_hide")
+            }
+        }, 10)
+    })
+
+	$('body').on('click', '.time-radio__label', function () {
+		if( !$(this).hasClass('_click') ){
+			$('.time-radio__label').addClass('_click')
+
+			$(this).closest('form').find('.form__submit-btn').prop('disabled', false)
+		}
+    })
+
+	$('body').on('click', '.info-obtaining .address-radio__label', function () {
+		if( !$(this).hasClass('_click') ){
+			$('.info-obtaining .address-radio__label').addClass('_click')
+
+			$(this).closest('form').find('.form__submit-btn').prop('disabled', false)
+		}
+    })
+
+	$('body').on('click', '.radio-obtaining__label', function () {
+		const thisEl = $(this)
+		setTimeout(() => {
+			if ( !thisEl.hasClass('_active') ) {
+				thisEl.closest('.radio-obtaining').find('.radio-obtaining__label').removeClass('_active')
+				thisEl.addClass('_active')
+
+				thisEl.closest('.info-obtaining').find('.info-obtaining__sector').removeClass('_show')
+
+				let obtaining = thisEl.data('obtaining')
+				$(obtaining).addClass('_show')
+
+				$('.info-obtaining__colr').removeClass('_show')
+				$('.modal-list').removeClass('_hide')
+			}
+		}, 10);
+    })
+
+	$('.form__input_adress').keydown(function() {
+		let thisEl = $(this)
+		setTimeout( function() {
+			let value = thisEl.val()
+
+			if ( value != '' ) {
+				$('.dropdown-adresses').addClass('_show')
+				$('.close-adresses').addClass('_show')
+			} else {
+				$('.dropdown-adresses').removeClass('_show')
+				$('.close-adresses').removeClass('_show')
+			}
+		}, 0)
+	})
+
+	$('body').on('click', '.close-adresses', function (e) {
+		e.preventDefault()
+		$('.dropdown-adresses').removeClass('_show')
+		$('.close-adresses').removeClass('_show')
+
+		$('.form__input_adress').val('')
+    })
+
+
+	$('body').on('click', '.open-map', function (e) {
+		e.preventDefault()
+		$('.info-obtaining__colr').addClass('_show')
+		$('.modal-list').addClass('_hide')
+    })
+
+	$('body').on('click', '.open-list', function (e) {
+		e.preventDefault()
+		$('.info-obtaining__colr').removeClass('_show')
+		$('.modal-list').removeClass('_hide')
+    })
+
+
+
+	$('body').on('submit', '#form-login', function (e) {
+		e.preventDefault()
+
+		$('.login-sectors__sector').removeClass('_show')
+		$('.login-sectors__sector_code').addClass('_show')
+	})
+
+	$('body').on('click', '.login-password', function (e) {
+		e.preventDefault()
+
+		$('.login-sectors__sector').removeClass('_show')
+		$('.login-sectors__sector_password').addClass('_show')
+    })
+
+	$('body').on('click', '.open-nocode', function (e) {
+		e.preventDefault()
+
+		$('.login-sectors__sector').removeClass('_show')
+		$('.login-sectors__sector_nocode').addClass('_show')
+    })
+
+	$('body').on('click', '.back-sector', function (e) {
+		e.preventDefault()
+
+		$('.login-sectors__sector').removeClass('_show')
+		let code = $(this).data('sector')
+		console.log(code)
+		$('.'+code).addClass('_show')
+    })
+
+	$('body').on('click', '.cookie-fix__btn', function (e) {
+		e.preventDefault()
+
+		$('.cookie-fix').remove()
+    })
 })
 
 $(window).on('load', () => {

@@ -75,7 +75,7 @@
 							</div>
 
 							<div class="header__top-wrap">
-								<a href="/baron" class="header__login">Войти</a>
+								<button type="button" data-content="#modal-login" class="header__login modal-btn">Войти</button>
 
 								<nav class="heade__menu _flex">
 									<div class="heade__menu-item">
@@ -550,7 +550,7 @@
 									</div>
 								</div>
 
-								<a href="/baron" class="header__login">Войти</a>
+								<button type="button" data-content="#modal-login" class="header__login modal-btn">Войти</button>
 
 								<button type="button" class="open-search">
 									<svg>
@@ -627,7 +627,7 @@
 														<div class="rate-order__flex _flex">
 															<div class="rate-order__title">Оцените заказ</div>
 
-															<div class="rating-js rate-order__rating-js">
+															<div class="rating-js rate-order__rating-js rate-order__rating_marg">
 																<div class="rating-js__star">
 																	<input name="adv1" type="radio" class="wow" value="1">
 																	<input name="adv1" type="radio" class="wow" value="2">
@@ -638,7 +638,7 @@
 															</div>
 
 															<div class="rate-order__btn">
-																<button class="rate-order__btn-leave">Оставить отзыв</button>
+																<button data-content="#modal-review" class="rate-order__btn-leave modal-btn">Оставить отзыв</button>
 															</div>
 														</div>
 													</div>
@@ -987,27 +987,342 @@
 		</div>
 
 
-		<section class="modal" id="callBback_modal">
-			<img data-src="images/modal_logo.png" src="images/img_plug.png" alt="" class="lozad modal_logo">
+		<section class="modal modal_small" id="modal-login">
+			<div class="login-sectors">
+				<div class="login-sectors__sector login-sectors__sector_login _show">
+					<div class="modal__title">Введите номер телефона</div>
 
-			<div class="modal_title">Заказать звонок</div>
+					<form action="" class="form modal__form" id="form-login">
+						<div class="form__label">Номер телефона</div>
 
-			<form action="" class="form">
-				<div class="line_flex flex">
-					<div class="line_form">
-						<input type="text" name="" value="" placeholder="Имя" class="input">
-					</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
 
-					<div class="line_form">
-						<input type="tel" name="" value="" placeholder="Телефон" class="input">
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь получать новости о новых <span>акциях и партнёрах</span>
+								</span>
+							</label>
+						</div>
+		
+						<div class="form__submit">
+							<!-- <button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Получить код</button> -->
+							<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Получить код</button>
+						</div>
+		
+						<div class="btn-bot">
+							<button type="button" class="btn-bord login-password">Войти по паролю</button>
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_password">
+					<button type="button" data-sector="login-sectors__sector_login" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
+
+					<div class="modal__title">Войти по логину и паролю</div>
+
+					<form action="" class="form modal__form">
+						<div class="form__label">Номер телефона</div>
+
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__label">Пароль</div>
+
+							<div class="form__field">
+								<input type="password" value="" placeholder="Введите пароль" class="form__input form__input_pass">
+
+								<button type="button" class="password-view">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye_off"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Войти</button>
+							</div>
+
+							<div class="btn-bot">
+								<button type="button" class="btn-bord">Не помню пароль</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_code">
+					<div class="modal__title">Введите код из смс</div>
+
+					<div class="code-info">Отправили 6-значный код на номер <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<form action="" class="form">
+						<div class="code-line">
+							<div class="code-line__flex _flex">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Войти</button>
+							</div>
+			
+							<div class="btn-bot">
+								<button type="button" class="btn-bord open-nocode">Не приходит код</button>
+							</div>
+						</div>
+
+						<div class="coder-repear">
+							<button type="button" class="coder-repear__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#repeat"></use>
+								</svg>
+								<span>Отправить еще раз</span>
+							</button>
+						</div>
+
+						<div class="coder-repear">
+							Запросить код повторно можно <br>через 59 секунд
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_nocode">
+					<button type="button" data-sector="login-sectors__sector_code" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
+
+					<div class="modal__title">Не приходит смс с кодом?</div>
+
+					<div class="code-info">Проверьте, нет ли ошибки в номере <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<div class="support-text support-text_bord">Все правильно? Тогда напишите нам на почту <a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a> или свяжитесь с нами <br>по телефону <a href="tel:+77273171000">+7 727 317 10 00</a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal modal_middle" id="modal-review">
+			<div class="modal__title">Ваш отзыв о заказе №216681</div>
+
+			<div class="modal__subtitle">Пожалуйста, оцените заказ, чтобы мы понимали, как нам стать лучше</div>
+
+			<form action="" class="form form-review">
+				<div class="form-review__totlal _flex">
+					<div class="form-review__totlal-title">Общая оценка</div>
+
+					<div class="rating-js rate-order__rating-js">
+						<div class="rating-js__star">
+							<input name="adv_total" type="radio" class="wow" value="1">
+							<input name="adv_total" type="radio" class="wow" value="2">
+							<input name="adv_total" type="radio" class="wow" value="3">
+							<input name="adv_total" type="radio" class="wow" value="4">
+							<input name="adv_total" type="radio" class="wow" value="5">
+						</div>
 					</div>
 				</div>
 
-				<div class="submit">
-					<button type="submit" class="submit_btn">Отправить</button>
+				<div class="form-review__ratings _flex">
+					<div class="form-review__ratings-item _flex">
+						<div class="form-review__ratings-title">Доставка</div>
+
+						<div class="rating-js rate-order__rating-js">
+							<div class="rating-js__star">
+								<input name="adv_delivery" type="radio" class="wow" value="1">
+								<input name="adv_delivery" type="radio" class="wow" value="2">
+								<input name="adv_delivery" type="radio" class="wow" value="3">
+								<input name="adv_delivery" type="radio" class="wow" value="4">
+								<input name="adv_delivery" type="radio" class="wow" value="5">
+							</div>
+						</div>
+					</div>
+					<div class="form-review__ratings-item _flex">
+						<div class="form-review__ratings-title">Удобство</div>
+
+						<div class="rating-js rate-order__rating-js">
+							<div class="rating-js__star">
+								<input name="adv_convenience" type="radio" class="wow" value="1">
+								<input name="adv_convenience" type="radio" class="wow" value="2">
+								<input name="adv_convenience" type="radio" class="wow" value="3">
+								<input name="adv_convenience" type="radio" class="wow" value="4">
+								<input name="adv_convenience" type="radio" class="wow" value="5">
+							</div>
+						</div>
+					</div>
+					<div class="form-review__ratings-item _flex">
+						<div class="form-review__ratings-title">Качество</div>
+
+						<div class="rating-js rate-order__rating-js">
+							<div class="rating-js__star">
+								<input name="adv_quality" type="radio" class="wow" value="1">
+								<input name="adv_quality" type="radio" class="wow" value="2">
+								<input name="adv_quality" type="radio" class="wow" value="3">
+								<input name="adv_quality" type="radio" class="wow" value="4">
+								<input name="adv_quality" type="radio" class="wow" value="5">
+							</div>
+						</div>
+					</div>
+					<div class="form-review__ratings-item _flex">
+						<div class="form-review__ratings-title">Скорость доставки</div>
+
+						<div class="rating-js rate-order__rating-js">
+							<div class="rating-js__star">
+								<input name="adv_time_del" type="radio" class="wow" value="1">
+								<input name="adv_time_del" type="radio" class="wow" value="2">
+								<input name="adv_time_del" type="radio" class="wow" value="3">
+								<input name="adv_time_del" type="radio" class="wow" value="4">
+								<input name="adv_time_del" type="radio" class="wow" value="5">
+							</div>
+						</div>
+					</div>
+					<div class="form-review__ratings-item _flex">
+						<div class="form-review__ratings-title">Вкус товара</div>
+
+						<div class="rating-js rate-order__rating-js">
+							<div class="rating-js__star">
+								<input name="adv_tasty" type="radio" class="wow" value="1">
+								<input name="adv_tasty" type="radio" class="wow" value="2">
+								<input name="adv_tasty" type="radio" class="wow" value="3">
+								<input name="adv_tasty" type="radio" class="wow" value="4">
+								<input name="adv_tasty" type="radio" class="wow" value="5">
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div class="agree">Нажимая кнопку, вы соглашаетесь с <a href="/baron">Политикой конфиденциальности</a> и <a href="/baron">Условиями использования</a></div>
+				<div class="form__line">
+					<div class="form__field">
+						<textarea placeholder="Напишите ваше мнение о заказе" class="form__textarea"></textarea>
+					</div>
+				</div>
+
+				<div class="file-selection">
+					<input type="file" name="" id="file2">
+
+					<label for="file2" class="file-selection__path">
+						<span class="file-selection__path-icon">
+							<svg>
+								<use xlink:href="images/sprite.svg#add"></use>
+							</svg>
+						</span>
+						<span class="file-selection__path-name" data-text="Добавить фото <span>(до 5 фото)</span>">Добавить фото <span>(до 5 фото)</span></span>
+					</label>
+				</div>
+
+				<div class="products-review products-review_marg">
+					<div class="products-review__title">Оцените товары из заказа</div>
+
+					<div class="products-review__product">
+						<div class="products-review__product-top _flex">
+							<div class="products-review__product-bord _flex">
+								<a href="/" class="products-review__product-img">
+									<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+
+								<div class="products-review__product-name">
+									<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <br>500 г
+								</div>
+							</div>
+
+							<div class="form-review__totlal _flex">
+								<div class="form-review__totlal-title">Ваша оценка</div>
+			
+								<div class="rating-js rate-order__rating-js">
+									<div class="rating-js__star">
+										<input name="adv_product1" type="radio" class="wow" value="1">
+										<input name="adv_product1" type="radio" class="wow" value="2">
+										<input name="adv_product1" type="radio" class="wow" value="3">
+										<input name="adv_product1" type="radio" class="wow" value="4">
+										<input name="adv_product1" type="radio" class="wow" value="5">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__label">Ваш отзыв</div>
+
+							<div class="form__field">
+								<textarea placeholder="Напишите, что вам понравилось в товаре" class="form__textarea"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="products-review__product">
+						<div class="products-review__product-top _flex">
+							<div class="products-review__product-bord _flex">
+								<a href="/" class="products-review__product-img">
+									<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+								</a>
+
+								<div class="products-review__product-name">
+									<a href="/">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <br>500 г
+								</div>
+							</div>
+
+							<div class="form-review__totlal _flex">
+								<div class="form-review__totlal-title">Ваша оценка</div>
+			
+								<div class="rating-js rate-order__rating-js">
+									<div class="rating-js__star">
+										<input name="adv_product2" type="radio" class="wow" value="1">
+										<input name="adv_product2" type="radio" class="wow" value="2">
+										<input name="adv_product2" type="radio" class="wow" value="3">
+										<input name="adv_product2" type="radio" class="wow" value="4">
+										<input name="adv_product2" type="radio" class="wow" value="5">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__label">Ваш отзыв</div>
+
+							<div class="form__field">
+								<textarea placeholder="Напишите, что вам понравилось в товаре" class="form__textarea"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form__submit">
+					<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Оставить отзыв</button>
+				</div>
 			</form>
 		</section>
 

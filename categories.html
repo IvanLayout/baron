@@ -75,7 +75,7 @@
 							</div>
 
 							<div class="header__top-wrap">
-								<a href="/baron" class="header__login">Войти</a>
+								<button type="button" data-content="#modal-login" class="header__login modal-btn">Войти</button>
 
 								<nav class="heade__menu _flex">
 									<div class="heade__menu-item">
@@ -546,7 +546,7 @@
 									</div>
 								</div>
 
-								<a href="/baron" class="header__login">Войти</a>
+								<button type="button" data-content="#modal-login" class="header__login modal-btn">Войти</button>
 
 								<button type="button" class="open-search">
 									<svg>
@@ -2236,28 +2236,153 @@
 		</div>
 
 
-		<section class="modal" id="callBback_modal">
-			<img data-src="images/modal_logo.png" src="images/img_plug.png" alt="" class="lozad modal_logo">
+		<section class="modal modal_small" id="modal-login">
+			<div class="login-sectors">
+				<div class="login-sectors__sector login-sectors__sector_login _show">
+					<div class="modal__title">Введите номер телефона</div>
 
-			<div class="modal_title">Заказать звонок</div>
+					<form action="" class="form modal__form" id="form-login">
+						<div class="form__label">Номер телефона</div>
 
-			<form action="" class="form">
-				<div class="line_flex flex">
-					<div class="line_form">
-						<input type="text" name="" value="" placeholder="Имя" class="input">
-					</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
 
-					<div class="line_form">
-						<input type="tel" name="" value="" placeholder="Телефон" class="input">
-					</div>
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox checkbox__agree">
+							<label class="checkbox__label">
+								<input type="checkbox" name="" checked>
+
+								<span class="checkbox__text">
+									Соглашаюсь получать новости о новых <span>акциях и партнёрах</span>
+								</span>
+							</label>
+						</div>
+		
+						<div class="form__submit">
+							<!-- <button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Получить код</button> -->
+							<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Получить код</button>
+						</div>
+		
+						<div class="btn-bot">
+							<button type="button" class="btn-bord login-password">Войти по паролю</button>
+						</div>
+					</form>
 				</div>
+				<div class="login-sectors__sector login-sectors__sector_password">
+					<button type="button" data-sector="login-sectors__sector_login" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
 
-				<div class="submit">
-					<button type="submit" class="submit_btn">Отправить</button>
+					<div class="modal__title">Войти по логину и паролю</div>
+
+					<form action="" class="form modal__form">
+						<div class="form__label">Номер телефона</div>
+
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" name="" value="" placeholder="Телефон" data-mask="+7 999 999 99 99" class="form__input">
+							</div>
+						</div>
+
+						<div class="form__line">
+							<div class="form__label">Пароль</div>
+
+							<div class="form__field">
+								<input type="password" value="" placeholder="Введите пароль" class="form__input form__input_pass">
+
+								<button type="button" class="password-view">
+									<svg>
+										<use xlink:href="images/sprite.svg#eye"></use>
+									</svg>
+									<svg>
+										<use xlink:href="images/sprite.svg#eye_off"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Войти</button>
+							</div>
+
+							<div class="btn-bot">
+								<button type="button" class="btn-bord">Не помню пароль</button>
+							</div>
+						</div>
+					</form>
 				</div>
+				<div class="login-sectors__sector login-sectors__sector_code">
+					<div class="modal__title">Введите код из смс</div>
 
-				<div class="agree">Нажимая кнопку, вы соглашаетесь с <a href="/baron">Политикой конфиденциальности</a> и <a href="/baron">Условиями использования</a></div>
-			</form>
+					<div class="code-info">Отправили 6-значный код на номер <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<form action="" class="form">
+						<div class="code-line">
+							<div class="code-line__flex _flex">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+								<input type="text" name="code-number" value="" data-mask="9" class="code-line__input input-number">
+							</div>
+						</div>
+		
+						<div class="form__bot _flex">
+							<div class="form__submit">
+								<button type="submit" class="btn-black form__submit-btn form__submit-btn_big" disabled>Войти</button>
+							</div>
+			
+							<div class="btn-bot">
+								<button type="button" class="btn-bord open-nocode">Не приходит код</button>
+							</div>
+						</div>
+
+						<div class="coder-repear">
+							<button type="button" class="coder-repear__btn">
+								<svg>
+									<use xlink:href="images/sprite.svg#repeat"></use>
+								</svg>
+								<span>Отправить еще раз</span>
+							</button>
+						</div>
+
+						<div class="coder-repear">
+							Запросить код повторно можно <br>через 59 секунд
+						</div>
+					</form>
+				</div>
+				<div class="login-sectors__sector login-sectors__sector_nocode">
+					<button type="button" data-sector="login-sectors__sector_code" class="back-sector">
+						<svg>
+							<use xlink:href="images/sprite.svg#arrow3"></use>
+						</svg>
+						<span>вернуться</span>
+					</button>
+
+					<div class="modal__title">Не приходит смс с кодом?</div>
+
+					<div class="code-info">Проверьте, нет ли ошибки в номере <span>+7 999 999 99 99</span> <a href="/">Изменить номер</a></div>
+
+					<div class="support-text support-text_bord">Все правильно? Тогда напишите нам на почту <a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a> или свяжитесь с нами <br>по телефону <a href="tel:+77273171000">+7 727 317 10 00</a></div>
+				</div>
+			</div>
 		</section>
 
 
