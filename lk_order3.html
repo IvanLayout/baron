@@ -522,8 +522,14 @@
 									</span>
 								</div>
 								
-								<div class="mini-modal mini-modal_time">
-									<button type="button" class="mini-modal__btn mini-modal__btn_look mini-modal__btn_time"><span>Завтра<b>, 10:00</b></span> <i>доставка</i></button>
+								<div class="mini-modal mini-modal_time mini-modal_time_user">
+									<a href="/baron" class="header__user">
+										<span class="header__user-icon">H</span>
+	
+										<span class="header__user-name">Настасья</span>
+	
+										<span class="header__user-number">999</span>
+									</a>
 
 									<div class="mini-modal__modal mini-modal__modal_time">
 										<button type="button" data-mini-close class="mini-modal__close">
@@ -550,7 +556,13 @@
 									</div>
 								</div>
 
-								<button type="button" data-content="#modal-login" class="header__login modal-btn">Войти</button>
+								<a href="/baron" class="header__user">
+									<span class="header__user-name">Настасья</span>
+
+									<span class="header__user-icon">H</span>
+
+									<span class="header__user-number">999</span>
+								</a>
 
 								<button type="button" class="open-search">
 									<svg>
@@ -571,88 +583,489 @@
 					<div class="cont">
 						<div class="centent-wrap__flex _flex">
 							<div class="centent-wrap__wrap">
-								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> Контакты</div>
+								<div class="breadcrumbs"><a href="/baron">Главная</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Личный кабинет</a> <span class="breadcrumbs__sep">/</span> <a href="/baron">Заказы</a> <span class="breadcrumbs__sep">/</span> Заказ 241101-216681</div>
 
 								<div class="centent-wrap__wrap-flex _flex">
 									<aside class="aside-catalog aside-catalog_inner">
 										<div class="aside-catalog__wrap">
-											<div class="aside-catalog__list">
+											<div class="aside-catalog__titlesmall">Личный кабинет</div>
+
+											<div class="aside-catalog__list aside-catalog__list_pad">
 												<div>
-													<a href="/baron">О магазине</a>
+													<a class="active">Заказы</a>
 												</div>
 												<div>
-													<a href="/baron">Режим работы</a>
+													<a href="/baron">Личные данные</a>
 												</div>
 												<div>
-													<a href="/baron">Заказ</a>
+													<a href="/baron">Адреса</a>
 												</div>
 												<div>
-													<a href="/baron">Доставка</a>
+													<a href="/baron">Изменение пароля</a>
 												</div>
 												<div>
-													<a href="/baron">Скидки<span> для пенсионеров, инвалидов, сирот и ветеранов ВОВ</span></a>
+													<a href="/baron">Скидки <span>инвалидам, пенсионерам и ветеранам</span></a>
 												</div>
-												<div>
-													<a href="/baron">Оптовикам и дистрибьюторам</a>
-												</div>
-												<div>
-													<a href="/baron">Правила продажи</a>
-												</div>
-												<div>
-													<a class="active">Контакты</a>
-												</div>
+											</div>
+
+											<div class="aside-logout">
+												<a href="/baron" class="aside-logout__btn">
+													<svg>
+														<use xlink:href="images/sprite.svg#arrow2"></use>
+													</svg>
+
+													Выйти
+												</a>
 											</div>
 										</div>
 									</aside>
 
 									<section class="centent-wrap__center">
-										<h1 class="page-title">Контакты</h1>
+										<section class="info-order">
+											<a href="/" class="info-order__back">
+												<svg>
+													<use xlink:href="images/sprite.svg#arrow2"></use>
+												</svg>
 
-										<section class="contacts contacts_marg">
-											<div class="contacts__items">
-												<div class="contacts__item _flex">
-													<div class="contacts__title">Свяжитесь с нами</div>
+												к заказам
+											</a>
 
-													<div class="contacts__col">
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Телефон</div>
-
-															<div class="contacts__desc">
-																<a href="tel:+77273171000">+7 727 317-10-00</a>, <a href="tel:+77470942829">+7 747 094-28-29</a>
-															</div>
-														</div>
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Электронная почта</div>
-
-															<div class="contacts__desc">
-																<a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a>
-															</div>
-														</div>
-													</div>
+											<div class="info-order__top _flex">
+												<div class="info-order__top-flex _flex">
+													<div class="main-title info-order__main-title">Заказ 241101-216681</div>
+													<div class="info-order__sticker _way">в пути</div>
 												</div>
-												<div class="contacts__item _flex">
-													<div class="contacts__title">Посетите наш магазин</div>
 
-													<div class="contacts__col">
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Адрес</div>
-
-															<div class="contacts__desc">
-																Казахстан, Алматинская обл, г. Талгар, ул. Кашкари, 5
-															</div>
-														</div>
-														<div class="contacts__line">
-															<div class="contacts__subtitle">Режим работы</div>
-
-															<div class="contacts__desc">
-																С понедельника по субботу с 09:00 до 18:00
-															</div>
-														</div>
-													</div>
-												</div>
+												<a href="/baron" class="info-order__receipt">
+													<span>Чек за заказ</span>
+												</a>
 											</div>
 
-											<div class="contacts__map" id="map"></div>
+											<div class="info-order__flex _flex">
+												<div class="info-order__coll">
+													<div class="reviews">
+														<div class="reviews__items">
+															<div class="reviews__item">
+																<div class="reviews__item-sector _flex">
+																	<div class="reviews__item-box _small">
+																		<div class="reviews__item-top _flex">
+																			<div class="reviews__item-flex _flex">
+																				<div class="reviews__item-name">Ваш отзыв</div>
+					
+																				<div class="reviews__rating _flex">
+																					<div class="reviews__rating-stars _flex">
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_off.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																					</div>
+									
+																					<div class="reviews__rating-grade _small">5.0</div>
+																				</div>
+																			</div>
+																		</div>
+
+																		<div class="reviews__item-imp">на модерации</div>
+																	</div>
+
+																	<button type="button" class="btn-gray reviews__item-edit">Редактировать отзыв</button>
+				
+																	<div class="reviews__item-info">
+																		<div class="reviews__ratings _flex">
+																			<div class="reviews__ratings-item">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 100%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">5</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Вкус</div>
+																			</div>
+																			<div class="reviews__ratings-item">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 80%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">4</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Сервис</div>
+																			</div>
+																			<div class="reviews__ratings-item _big">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 100%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">5</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Доставка</div>
+																			</div>
+																		</div>
+
+																		<div class="spoiler-wrap">
+																			<div class="spoiler-text reviews__item-text">
+																				19.10.2024 я сделала очередной заказ. В том числе в нем был Сальтисон. Это отличный продукт, очень вкусный. Такой делала моя мама. Спасибо Барону за отличную продукцию и своевременную доставку. Я его рекомендовала всем своим родственникам и знакомым. Успеха Вам!
+																				19.10.2024 я сделала очередной заказ. В том числе в нем был Сальтисон. Это отличный продукт, очень вкусный. Такой делала моя мама. Спасибо Барону за отличную продукцию и своевременную доставку. Я его рекомендовала всем своим родственникам и знакомым. Успеха Вам!
+																			</div>
+
+																			<button type="button" class="more-text">
+																				<span>Показать все</span>
+																				<span>Скрыть все</span>
+
+																				<svg>
+																					<use xlink:href="images/sprite.svg#arrow1"></use>
+																				</svg>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="reviews__item">
+																<div class="reviews__item-sector _flex">
+																	<div class="reviews__item-box">
+																		<div class="reviews__item-top _flex">
+																			<div class="reviews__item-flex _flex">
+																				<div class="reviews__item-name">Ваш отзыв</div>
+					
+																				<div class="reviews__rating _flex">
+																					<div class="reviews__rating-stars _flex">
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																						<div class="reviews__rating-star _small">
+																							<img data-src="images/star_off.svg" src="images/img_plug.png" alt="" class="lazyload">
+																						</div>
+																					</div>
+									
+																					<div class="reviews__rating-grade _small">5.0</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="reviews__item-published">опубликован</div>
+				
+																	<div class="reviews__item-info">
+																		<div class="reviews__ratings _flex">
+																			<div class="reviews__ratings-item">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 100%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">5</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Вкус</div>
+																			</div>
+																			<div class="reviews__ratings-item">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 80%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">4</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Сервис</div>
+																			</div>
+																			<div class="reviews__ratings-item _big">
+																				<div class="reviews__ratings-flex _flex">
+																					<div class="reviews__ratings-progrees">
+																						<span style="width: 100%;"></span>
+																					</div>
+							
+																					<div class="reviews__ratings-star">
+																						<img data-src="images/star_on.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</div>
+																					<div class="reviews__ratings-number">5</div>
+																				</div>
+
+																				<div class="reviews__ratings-title">Доставка</div>
+																			</div>
+																		</div>
+
+																		<div class="spoiler-wrap">
+																			<div class="spoiler-text reviews__item-text">
+																				19.10.2024 я сделала очередной заказ. В том числе в нем был Сальтисон. Это отличный продукт, очень вкусный. Такой делала моя мама. Спасибо Барону за отличную продукцию и своевременную доставку. Я его рекомендовала всем своим родственникам и знакомым. Успеха Вам!
+																			</div>
+
+																			<button type="button" class="more-text">
+																				<span>Показать все</span>
+																				<span>Скрыть все</span>
+
+																				<svg>
+																					<use xlink:href="images/sprite.svg#arrow1"></use>
+																				</svg>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="info-order__items">
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Детали заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="about-order">
+																	<div class="about-order__line _flex">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _status">
+																				<svg>
+																					<use xlink:href="images/sprite.svg#imp"></use>
+																				</svg>
+
+																				Статус оплаты
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val _red">
+																				<span>требуется доплата <span>99 999 ₸</span></span>
+																			</div>
+																		</div>
+
+																		<button type="button" class="order-pay">Оплатить</button>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Номер заказа
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>241101-216681</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Дата оформления
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>10.10.2024</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ оплаты
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Картой</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Способ получения
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Доставка</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name">Адрес
+																				</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Москва, Московская Улица, 10к1</span>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="about-order__line about-order__line_comment">
+																		<div class="about-order__item _flex">
+																			<div class="about-order__name _flex">
+																				<span>Комментарий к заказу</span>
+																				<button class="about-order__edit">
+																					<svg>
+																						<use xlink:href="images/sprite.svg#edit"></use>
+																					</svg>
+																				</button>
+																			</div>
+																			<div class="about-order__sep"></div>
+																			<div class="about-order__val">
+																				<span>Обязательно позвонить в домофон, оставить у двери</span>
+																			</div>
+																		</div>
+
+																		<form class="form-comment" id="order-comment">
+																			<div class="form-comment__line">
+																				<div class="form-comment__label">Комментарий к заказу</div>
+
+																				<div class="form-comment__field _flex">
+																					<textarea class="form-comment__textarea">Обязательно позвонить в домофон, оставить у двери</textarea>
+
+																					<button type="reset" class="form-comment__reset">
+																						<svg>
+																							<use xlink:href="images/sprite.svg#close1"></use>
+																						</svg>
+																					</button>
+																				</div>
+																			</div>
+
+																			<div class="form-comment__desc">Комментарий водителю и курьеру, если нужно что-то учесть при доставке</div>
+
+																			<div class="form-comment__submit">
+																				<button type="submit" class="btn-black form-comment__submit-btn">Сохранить</button>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																Товары в заказе
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-products">
+																	<div class="order-products__produt _flex">
+																		<a href="/baron" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																	<div class="order-products__produt _flex">
+																		<a href="/baron" class="order-products__produt-photo">
+																			<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																		</a>
+
+																		<div class="order-products__produt-name">
+																			<a href="/baron">Колбаски гриль из баранины с кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+
+																		<div class="order-products__produt-price">99 999 ₸</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="info-order__item _active">
+															<button type="button" class="info-order__open">
+																История заказа
+
+																<svg>
+																	<use xlink:href="images/sprite.svg#arrow1"></use>
+																</svg>
+															</button>
+
+															<div class="info-order__data">
+																<div class="order-history">
+																	<div class="order-history__item _active">
+																		<div class="order-history__item-val">Собран, в пути</div>
+																		
+																		<div class="order-history__item-date">9 ноября 188:445</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Отправлен на сборку</div>
+																		
+																		<div class="order-history__item-date">9 ноября 88:001</div>
+																	</div>
+																	<div class="order-history__item">
+																		<div class="order-history__item-val">Оформлен, Москва, Московская Улица, 10к1</div>
+																		
+																		<div class="order-history__item-date">8 ноября 118:440</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="info-order__colr">
+													<div class="info-order__colr-title">Итого</div>
+
+													<div class="order-total">
+														<div class="order-total__item _flex">
+															<div class="order-total__name">Товары</div>
+															<div class="order-total__line"></div>
+															<div class="order-total__val">50 000 ₸</div>
+														</div>
+														<div class="order-total__item _flex">
+															<div class="order-total__name">Скидка</div>
+															<div class="order-total__line"></div>
+															<div class="order-total__val">-5 000 ₸</div>
+														</div>
+														<div class="order-total__item _flex">
+															<div class="order-total__name">Доставка</div>
+															<div class="order-total__line"></div>
+															<div class="order-total__val">1 000 ₸</div>
+														</div>
+														<div class="order-total__item _flex">
+															<div class="order-total__name">Общая сумма заказа</div>
+															<div class="order-total__line"></div>
+															<div class="order-total__val _big">99 999 ₸</div>
+														</div>
+													</div>
+
+													<a href="/baron" class="order-repeat">
+														<span>Повторить заказ</span>
+													</a>
+												</div>
+											</div>
 										</section>
 									</section>
 								</div>
@@ -934,28 +1347,9 @@
 
 		<script src="js/nice-select.js"></script>
 		<script src="js/inputmask.min.js"></script>
+		<script src="js/jquery.rating.pack.js"></script>
 
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
-
-		<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
-		<script>
-			//карта
-			ymaps.ready(init);
-			function init(){
-				var myMap = new ymaps.Map("map", {
-					center: [43.30293499573415, 77.21651881751883],
-					zoom: 14
-				}),
-				myPlacemark = new ymaps.Placemark([43.30293499573415, 77.21651881751883],{
-				}, {
-					iconImageHref: 'images/map_marker.svg',
-					iconImageSize: [44, 45],
-					iconImageOffset: [-22, -22],
-				})
-
-				myMap.geoObjects.add(myPlacemark)
-			}
-		</script>
 	</body>
 </html>

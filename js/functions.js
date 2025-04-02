@@ -212,17 +212,31 @@ $(() => {
 	$('.file-selection input[type=file]').change(function(){
 		var val = $(this).val()
 
-		var parent = $(this).parents('.file-selection')
+		var parent = $(this).closest('.file-selection')
 
 		parent.find('.file-selection__path-name').text(val)
 
+		parent.find('.file-selection__path').addClass('_active')
+
 		if(parent.find('.file-selection__path-name').text() == '') {
 			let defoultText = parent.find('.file-selection__path-name').data('text')
-
-			console.log(defoultText)
 			
 			parent.find('.file-selection__path-name').html(defoultText)
+
+			parent.find('.file-selection__path').removeClass('_active')
 		}
+	})
+
+	$('body').on('click', '.file-selection__clear', function (e) {
+		e.preventDefault()
+
+		var parent = $(this).closest('.file-selection')
+
+		let defoultText = parent.find('.file-selection__path-name').data('text')
+			
+		parent.find('.file-selection__path-name').html(defoultText)
+
+		parent.find('.file-selection__path').removeClass('_active')
 	})
 
 
@@ -288,10 +302,10 @@ $(() => {
 
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
-			$(this).closest('.revirews__item').find('.comment').removeClass('_show')
+			$(this).closest('.reviews__item').find('.comment').removeClass('_show')
 		} else {
 			$(this).addClass('_active')
-			$(this).closest('.revirews__item').find('.comment').addClass('_show')
+			$(this).closest('.reviews__item').find('.comment').addClass('_show')
 		}
 	})
 
@@ -328,6 +342,7 @@ $(() => {
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.dragToClose = false
 	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.trapFocus = false
 
 	Fancybox.defaults.template = {
 		closeButton: '<svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 3L3 11M3 3L11 11" stroke-linecap="round"/></svg>',
@@ -358,6 +373,7 @@ $(() => {
 		e.preventDefault()
 
 		Fancybox.close()
+		$('.fancybox__container').removeClass('_hidem')
 	})
 
 
@@ -416,7 +432,7 @@ $(() => {
     })
 
 	$('body').on('click', '.checkbox-range__label_house', function () {
-        let checkbox = $('#private-house')
+        let checkbox = $(this).find('input[type="checkbox"]')
 
         setTimeout(() => {
             if (checkbox.prop("checked")) {
@@ -534,6 +550,20 @@ $(() => {
 
 		$('.cookie-fix').remove()
     })
+
+	$('body').on('click', '.more-text', function (e) {
+		let textWrap = $(this).closest('.spoiler-wrap')
+
+        if ( textWrap.hasClass('full-text') ) {
+			textWrap.removeClass('full-text')
+            $(this).removeClass('_active')
+        } else {
+			textWrap.addClass('full-text')
+            $(this).addClass('_active')
+
+
+        }
+    });
 })
 
 $(window).on('load', () => {

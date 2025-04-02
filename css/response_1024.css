@@ -377,7 +377,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		font-family: var(--second-family);
+		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 16px;
 		line-height: normal;
@@ -396,11 +396,12 @@
 	}
 
 	.open-search svg{
-		width: 16px;
-		height: 16px;
+		width: 18px;
+		height: 18px;
 		display: block;
 		fill: none;
 		stroke: #262323;
+		stroke-width: 1.5px;
 	}
 
 
@@ -544,7 +545,7 @@
 		align-content: center;
 		flex-wrap: nowrap;
 
-		font-family: var(--second-family);
+		font-family: var(--font-family);
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 1.2;
@@ -827,6 +828,10 @@
 		margin-top: 45px;
 	}
 
+	.faq_marg2{
+		margin-top: 45px;
+	}
+
 	.faq__item{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -891,7 +896,7 @@
 	}
 
 
-	.revirews__top{
+	.reviews__top{
 		margin-top: 40px;
 	}
 
@@ -945,12 +950,47 @@
 	}
 
 
+	.info-order__back{
+		display: inline-block;
+		margin-bottom: 16px;
+
+		font-size: 14px;
+		color: #919191;
+		text-decoration: none;
+		padding-left: 13px;
+		position: relative;
+	}
+
+	.info-order__back svg{
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 6px;
+		height: 9px;
+		margin-top: -4px;
+		display: block;
+
+		fill: none;
+		stroke: currentColor;
+		transform: rotate(180deg);
+	}
+
+
 	.info-order__way-btn{
 		line-height: 30px;
 	}
 
 	.payment-method__faq{
 		padding-right: 19px;
+	}
+
+
+	.centent-wrap__center_checkout .page-title{
+		display: none;
+	}
+
+	.your-details{
+		margin-top: 0;
 	}
 
 
@@ -1028,7 +1068,26 @@
 	}
 
 
+	.info-order .reviews__item{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
 	.info-obtaining__coll .info-obtaining__map{
 		width: calc(113% - 10px);
 	}
+
+	.wrap-height{
+		min-height: 280px;
+	}
+
+	.reviews__item-box._small{
+		width: 100%;
+	}
+
+	.reviews__item-edit {
+        order: 3;
+        width: 100%;
+        margin-top: 16px;
+    }
 }

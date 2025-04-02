@@ -27,6 +27,15 @@
 	}
 
 
+	.header__logo{
+		top: 18px;
+	}
+	
+	.header__logo img{
+		width: 103px;
+	}
+
+
 	.section-head{
 		justify-content: space-between;
 	}
@@ -185,6 +194,11 @@
 		margin-top: 0;
 	}
 
+	.btn-wrap._mob{
+		margin-top: 15px;
+		display: block;
+	}
+
 
 	.recipes__slider{
 		margin-top: 19px;
@@ -293,7 +307,7 @@
 		background: #373737;
 	}
 
-	.revirews__item-oder{
+	.reviews__item-oder{
 		width: calc(100% - 20px);
 	}
 
@@ -307,16 +321,16 @@
 	}
 
 
-	.revirews__ratings {
+	.reviews__ratings {
 		margin-top: 0;
 	}
 
-	.revirews__ratings-item {
+	.reviews__ratings-item {
 		margin-top: 17px;
 		width: calc(100% / 2 - 15px);
 	}
 
-	.revirews__ratings-item._big{
+	.reviews__ratings-item._big{
 		width: calc(100% - 15px);
 	}
 
@@ -492,6 +506,16 @@
 
 	.info-order__colr-title{
 		font-size: 22px;
+		font-weight: 500;
+	}
+
+	.info-order__open{
+		font-size: 22px;
+		font-weight: 500;
+	}
+
+	.about-order__val{
+		max-width: 160px;
 	}
 
 	.order-total{
@@ -536,6 +560,10 @@
 
 	.checkout-info__name{
 		width: 150px;
+	}
+
+	.method-obtaining_big .checkout-info__name{
+		width: 100%;
 	}
 
 	.form-review .star-rating{
@@ -781,7 +809,7 @@
 		left: 0;
 		width: 100%;
 		height: 30px;
-		font: 500 13px/20px var(--second-family);
+		font: 500 13px/20px var(--font-family);
 		color: #262323;
 		transition: color .2s linear;
 		z-index: 10;
@@ -821,7 +849,7 @@
 		border-radius: 4px;
 		box-shadow: 0 1px 1px 0 rgba(103, 92, 86, 0.09), 0 2px 2px 0 rgba(103, 92, 86, 0.08), 0 5px 3px 0 rgba(103, 92, 86, 0.04), 0 8px 3px 0 rgba(103, 92, 86, 0.01), 0 13px 4px 0 rgba(103, 92, 86, 0);
 		height: 45px;
-		font: 500 13px/21px var(--second-family);
+		font: 500 13px/21px var(--font-family);
 		color: #262323;
 		z-index: 20;
 		display: block;
@@ -846,6 +874,7 @@
 
 	.no-adress{
 		margin-top: 58px;
+		margin-bottom: 65px;
 	}
 
 	.info-obtaining__coll .info-obtaining__map{
@@ -868,5 +897,17 @@
 		height: 24px;
 		top: 22px;
 		right: 10px;
+	}
+
+	.spoiler-text{
+		-webkit-line-clamp: 6;
+	}
+
+	.info-order .reviews__ratings-item {
+		width: calc(100% / 2 - 20px);
+	}
+	
+	.info-order .reviews__ratings-item._big {
+		width: calc(100% - 15px);
 	}
 }
