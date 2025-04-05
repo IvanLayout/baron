@@ -496,12 +496,16 @@ button
 	position: absolute;
 	left: 0;
 	top: 50%;
-	margin-top: -3px;
+	margin-top: -2.5px;
 	display: block;
 	fill: currentColor;
 }
 
 .header__checkout{
+	display: none;
+}
+
+.header__title{
 	display: none;
 }
 
@@ -3087,7 +3091,7 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	top: 50%;
 	width: 11px;
 	height: 9px;
-	margin-top: -4.5px;
+	margin-top: -4px;
 
 	fill: none;
 	stroke: currentColor;
@@ -3923,10 +3927,6 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	height: 18px;
 }
 
-.reviews__rating-star + .reviews__rating-star{
-	margin-left: 1px;
-}
-
 .reviews__rating-star:not(._small) + .reviews__rating-star:not(._small){
 	margin-left: 4px;
 }
@@ -3966,7 +3966,7 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .reviews__rating-date{
 	font-weight: 400;
 	font-size: 12px;
-	line-height: normal;
+	line-height: 14px;
 	color: #BFBFBF;
 	padding-top: 4px;
 	margin-left: 12px;
@@ -4436,6 +4436,23 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	line-height: normal;
 }
 
+.profitable-together__title span{
+	position: relative;
+	display: inline-block;
+	padding-right: 18px;
+}
+
+.profitable-together__title svg{
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 14px;
+	top: 2px;
+	right: 0;
+	fill: #E83F38;
+	stroke: #E83F38;
+}
+
 .profitable-together__products{
 	margin-top: 3px;
 	justify-content: space-between;
@@ -4567,7 +4584,8 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .product-info__review-number{
 	font-weight: 400;
 	font-size: 16px;
-	line-height: normal;
+	line-height: 16px;
+	padding-top: 3px;
 }
 
 .price-quantity{
@@ -4920,8 +4938,9 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	white-space: nowrap;
 	width: 100%;
 
-	font: 16px/20px var(--font-family);
+	font: 16px/18px var(--font-family);
 	color: #262323;
+	padding-top: 2px;
 	padding-left: 35px;
 	position: relative;
 	text-align: left;
@@ -4969,6 +4988,7 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid #EBE8E5;
+	text-decoration: none;
 }
 
 .article:nth-child(10n-1),
@@ -5003,7 +5023,7 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 }
 
 @media (any-hover: hover){
-	.article__img:hover img{
+	.article:hover .article__img img{
 		transform: scale(1.1);
 	}
 }
@@ -5025,6 +5045,9 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	flex-grow: 1;
 	font-size: 13px;
 	line-height: normal;
+	display: block;
+	color: #262323;
+	transition: color .2s linear;
 }
 
 .article:nth-child(10n-1) .article__name,
@@ -5033,14 +5056,8 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	padding-bottom: 3px;
 }
 
-.article__name a{
-	color: #262323;
-	text-decoration: none;
-	transition: color .2s linear;
-}
-
 @media (any-hover: hover){
-	.article__name a:hover{
+	.article:hover .article__name{
 		color: #BFBFBF;
 	}
 }
@@ -5052,8 +5069,10 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .article__date{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
+	display: block;
 }
 
 .article__flex{
@@ -5063,10 +5082,12 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .article__view{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
 	padding-left: 17px;
 	position: relative;
+	display: block;
 }
 
 .article__view::before{
@@ -5082,10 +5103,12 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .article__time{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
 	position: relative;
 	padding-left: 17px;
+	display: block;
 }
 
 .article__time::before{
@@ -5208,9 +5231,9 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .main-articles__article-view{
 	margin: 0 0 5px 5px;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 20px;
 	color: #fff;
-	padding: 0 7px 0 24px;
+	padding: 2px 7px 0 24px;
 	position: relative;
 	border-radius: 2px;
 
@@ -5231,9 +5254,9 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .main-articles__article-time{
 	margin: 0 0 5px 5px;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 20px;
 	color: #fff;
-	padding: 0 7px 0 24px;
+	padding: 2px 7px 0 24px;
 	position: relative;
 	border-radius: 2px;
 
@@ -5342,7 +5365,8 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .main-articles__item-date{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
 }
 
@@ -5353,7 +5377,8 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .main-articles__item-view{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
 	padding-left: 17px;
 	position: relative;
@@ -5372,7 +5397,8 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 .main-articles__item-time{
 	margin: 10px 0 0 10px;
 	font-size: 12px;
-	line-height: 13px;
+	line-height: 12px;
+	padding-top: 1px;
 	color: #919191;
 	position: relative;
 	padding-left: 17px;
@@ -6042,7 +6068,8 @@ input[type=radio]:checked + .address-radio__wrap::before
 	font-family: var(--font-family);
 	font-weight: 500;
 	font-size: 30px;
-	line-height: normal;
+	line-height: 31px;
+	padding-top: 2px;
 	color: #262323;
 	margin-right: 12px;
 }
@@ -6334,7 +6361,7 @@ input[type=radio]:checked + .address-radio__wrap::before
 	width: 14px;
 	height: 14px;
 	display: block;
-	fill: none;
+	fill: #ED6560;
 	stroke: #ED6560;
 }
 
@@ -6345,11 +6372,7 @@ input[type=radio]:checked + .address-radio__wrap::before
 .about-order__edit{
 	width: 18px;
 	height: 18px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-	flex-wrap: wrap;
+	display: inline-block;
 	color: #BFBFBF;
 	margin-left: 5px;
 	margin-top: 2px;
@@ -7229,6 +7252,7 @@ input[type=radio]:checked + .radio-payment__info
 
 .info-order .reviews__rating-grade._small{
 	font-size: 18px;
+	line-height: 20px;
 }
 
 .reviews__item-info{
@@ -7410,7 +7434,8 @@ input[type=radio]:checked + .radio-payment__info
 .footer__phone{
 	font-weight: 400;
 	font-size: 22px;
-	line-height: normal;
+	line-height: 24px;
+	padding-top: 4px;
 	color: #262323;
 	text-decoration: none;
 }

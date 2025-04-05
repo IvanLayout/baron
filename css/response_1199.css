@@ -46,7 +46,7 @@
 
 	.aside-cart_full._show{
 		height: 100%;
-		z-index: 90;
+		z-index: 101;
 		overflow: hidden;
 		overflow-y: auto;
 	}

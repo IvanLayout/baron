@@ -384,6 +384,23 @@
 		color: #262323;
 		transform: translate(-50%,-50%);
 	}
+	
+	.header__title{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 16px;
+		line-height: normal;
+		color: #262323;
+		transform: translate(-50%,-50%);
+	}
+
+	.header_lk .header__logo{
+		display: none;
+	}
 
 	.open-search{
 		width: 44px;
@@ -785,6 +802,16 @@
 
 	.aside-catalog__list a span{
 		display: none;
+	}
+
+	.aside-catalog__list_white a{
+		background-color: transparent;
+		color: #919191;
+	}
+
+	.aside-catalog__list_white a.active{
+		color: #262323;
+		background-color: #F4F1EF;
 	}
 
 	.aside-logout{
