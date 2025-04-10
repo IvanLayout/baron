@@ -2867,6 +2867,10 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	padding: 0 13px 16px;
 }
 
+.open-search2{
+	display: none;
+}
+
 .aside-cart__title{
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -7868,6 +7872,15 @@ input[type=radio]:checked + .time-radio__info
 	width: 179%;
 	top: -13px;
 	height: calc(100% + 18px);
+}
+
+.info-obtaining__map-wrap{
+	height: 100%;
+}
+
+.increase-map,
+.out-map{
+	display: none;
 }
 
 .fancybox__content.modal_big .carousel__button.is-close{

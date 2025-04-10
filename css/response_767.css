@@ -881,11 +881,56 @@
 	.info-obtaining__coll .info-obtaining__map{
 		display: block;
 		width: 100%;
-		position: relative;
+		position: static;
 		top: 0;
 		left: 0;
 		margin-top: 10px;
 		height: 200px;
+	}
+
+	.increase-map{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 30;
+	}
+
+	.info-obtaining__map-wrap{
+		position: relative;
+	}
+
+	.info-obtaining__map-wrap._show .increase-map{
+		display: none;
+	}
+
+	.info-obtaining__map-wrap._show{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: calc(100% - 161px);
+		z-index: 50;
+	}
+
+	.form__line_abs._show{
+		position: absolute;
+		left: 0;
+		bottom: 53px;
+		width: 100%;
+		background: #fff;
+		padding: 15px 6px 0;
+		z-index: 50;
+	}
+
+	.form__line_abs._show .dropdown-adresses{
+		display: none;
+	}
+
+	.add-adress_h{
+		min-height: 689px;
 	}
 
 	.form_adress{
@@ -910,5 +955,35 @@
 	
 	.info-order .reviews__ratings-item._big {
 		width: calc(100% - 15px);
+	}
+
+
+	.out-map{
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		width: 40px;
+		height: 40px;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		flex-wrap: wrap;
+		background: #fff;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+		border-radius: 3px;
+		z-index: 42;
+		color: #919191;
+	}
+
+	.info-obtaining__map-wrap._show .out-map{
+		display: flex;
+	}
+
+	.out-map svg{
+		display: block;
+		width: 14px;
+		height: 14px;
+		fill: currentColor;
+		stroke: currentColor;
 	}
 }

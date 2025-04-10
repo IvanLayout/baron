@@ -46,7 +46,7 @@
 				<header class="header">
 					<div class="cont">
 						<div class="header__top _flex">
-							<div class="header__top-adres">Улица Большие Каменщики, 9сС</div>
+							<button data-content="#modal-add-adress" class="header__top-adres modal-btn">Улица Большие Каменщики, 9сС</button>
 
 							<div class="mini-modal mini-modal_lang">
 								<button type="button" class="mini-modal__btn mini-modal__btn_look heade__lang">
@@ -516,11 +516,11 @@
 									<div class="header-search__overlay"></div>
 								</div>
 								
-								<div class="header__adres">
+								<button type="button" data-content="#modal-add-adress" class="header__adres modal-btn">
 									<span>
 										Улица Большие Каменщики, 9сС
 									</span>
-								</div>
+								</button>
 								
 								<div class="mini-modal mini-modal_time">
 									<button type="button" class="mini-modal__btn mini-modal__btn_look mini-modal__btn_time"><span>Завтра<b>, 10:00</b></span> <i>доставка</i></button>
@@ -2686,6 +2686,180 @@
 					<div class="code-info">Проверьте, нет ли ошибки в номере <span>+7 999 999 99 99</span> <a href="/baron">Изменить номер</a></div>
 
 					<div class="support-text support-text_bord">Все правильно? Тогда напишите нам на почту <a href="mailto:no-reply@baron.kz">no-reply@baron.kz</a> или свяжитесь с нами <br>по телефону <a href="tel:+77273171000">+7 727 317 10 00</a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="modal modal_big" id="modal-add-adress">
+			<div class="info-obtaining _add _flex">
+				<div class="info-obtaining__coll">
+					<div class="info-obtaining__coll-wrap">
+						<div class="add-adress add-adress_h">
+							<div class="modal__title">Добавить адрес</div>
+
+							<form action="" class="form form_adress">
+								<div class="form__line form__line_abs">
+									<div class="form__label">Город/населенный пункт, улица, дом<span>*</span></div>
+
+									<div class="form__field">
+										<input type="text" value="" placeholder="Адрес" class="form__input form__input_adress">
+
+										<button type="button" class="close-adresses">
+											<svg>
+												<use xlink:href="images/sprite.svg#close1"></use>
+											</svg>
+										</button>
+
+										<div class="dropdown-adresses">
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+											<div class="dropdown-adresses__item">
+												<button type="button" class="dropdown-adresses__btn">
+													<span>ул. Московская</span>
+
+													<span class="dropdown-adresses__btn-city">Москва</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="info-obtaining__map">
+									<div class="info-obtaining__map-wrap">
+										<button type="button" class="out-map">
+											<svg>
+												<use xlink:href="images/sprite.svg#close2"></use>
+											</svg>
+										</button>
+
+										<button type="button" class="increase-map"></button>
+
+										<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab60db649eb78927bee9ea16468e74d9416abcb8761c2d0d2715ac2cbbbcbd125&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+									</div>
+								</div>
+
+								<div class="checkbox-range checkbox-range_marg">
+									<label class="checkbox-range__label checkbox-range__label_house">
+										<input type="checkbox" name="">
+
+										<span class="checkbox-range__text">
+											Частный дом
+										</span>
+									</label>
+								</div>
+
+								<div class="wrap-height">
+									<div class="private-house">
+										<div class="private-house__flex _flex">
+											<div class="form__line">
+												<div class="form__label">Подъезд<span>*</span></div>
+
+												<div class="form__field">
+													<input type="text" value="" placeholder="Подъезд" class="form__input">
+												</div>
+											</div>
+											<div class="form__line">
+												<div class="form__label">Квартира<span>*</span></div>
+
+												<div class="form__field">
+													<input type="text" value="" placeholder="Квартира" class="form__input">
+												</div>
+											</div>
+											<div class="form__line">
+												<div class="form__label">Этаж<span>*</span></div>
+
+												<div class="form__field">
+													<input type="text" value="" placeholder="Этаж" class="form__input">
+												</div>
+											</div>
+											<div class="form__line">
+												<div class="form__label">Код домофона<span>*</span></div>
+
+												<div class="form__field">
+													<input type="text" value="" placeholder="Код" class="form__input">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__line">
+										<div class="form__field">
+											<textarea placeholder="Что еще важно знать курьеру?" class="form__textarea"></textarea>
+										</div>
+									</div>
+								</div>
+
+								<div class="checkbox-range">
+									<label class="checkbox-range__label">
+										<input type="checkbox" name="">
+
+										<span class="checkbox-range__text">
+											Сделать адресом по умолчанию
+										</span>
+									</label>
+								</div>
+
+								<div class="form__submit form__submit_abs">
+									<button type="submit" class="btn-black form__submit-btn form__submit-btn_big">Добавить адрес</button>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
