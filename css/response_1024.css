@@ -813,7 +813,8 @@
 		color: #919191;
 	}
 
-	.aside-catalog__list_white a.active{
+	.aside-catalog__list_white a.active,
+	.aside-catalog__list_white a._active{
 		color: #262323;
 		background-color: #F4F1EF;
 		padding-left: 15px;

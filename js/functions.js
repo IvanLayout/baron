@@ -592,6 +592,18 @@ $(() => {
 		$(this).closest('.info-obtaining__map-wrap').removeClass('_show')
 		$(this).closest('.add-adress_h').find('.form__line_abs').removeClass('_show')
     })
+
+	// Плавная прокрутка к якорю
+	$('.scroll-btn').click(function(e) {
+		e.preventDefault()
+
+		let href = $(this).data('anchor'),
+			hHead = $('.header__info-wrap').innerHeight(),
+			hCats = $('.aside-catalog__wrap').innerHeight(),
+			addOffset = hHead + hCats;
+
+		$('html, body').stop().animate({ scrollTop: $(href).offset().top - addOffset }, 1000)
+	})
 })
 
 $(window).on('load', () => {
@@ -633,6 +645,11 @@ $(window).on('load', () => {
 	// }
 
 
+	if ( $('.products_cats').length ){
+		catsActive()
+	}
+
+
 	$(window).on('scroll', () => {
 		if($('.header__info').length){
 			if( $(window).scrollTop() > $('.header__info').offset().top ) {
@@ -656,7 +673,11 @@ $(window).on('load', () => {
 		// 	$('.header-search__wrap').addClass('_fixed')
 		// } else {
 		// 	$('.header-search__wrap').removeClass('_fixed')
-		// }		
+		// }
+		
+		if ( $('.products_cats').length ){
+			catsActive()
+		}
 	})
 
 	$('.aside-cart_full').on('scroll', () => {
@@ -666,6 +687,12 @@ $(window).on('load', () => {
 			$('.aside-cart__fix').removeClass('_hide')
 		}
 	})
+})
+
+$(window).on('resize', () => {
+	if ( $('.products_cats').length ){
+		catsActive()
+	}
 })
 
 // Вспомогательные функции
@@ -686,3 +713,30 @@ const widthScroll = () => {
 }
 
 const is_touch_device = () => !!('ontouchstart' in window)
+
+function catsActive() {
+	$('.centent-wrap').find('.products_cats').each( function(index, element) {
+		let block = element,
+			windowHeight = $(window).height(),
+			scrollTop = $(window).scrollTop(),
+			windowCenter = scrollTop + windowHeight / 2,
+			blockTop = $(block).offset().top,
+			blockBottom = blockTop + $(block).outerHeight(),
+			idBlock = $(block).attr('id');
+
+		if ((blockTop <= windowCenter && blockTop >= scrollTop) || (blockBottom >= windowCenter && blockBottom <= scrollTop + windowHeight)) {
+			if ( !$('[data-anchor="#' + idBlock + '"]').hasClass('_active') ) {
+				$('.aside-catalog__list a').removeClass('_active')
+
+				$('[data-anchor="#' + idBlock + '"]').addClass('_active')	
+
+				let offset = $('[data-anchor="#' + idBlock + '"]').offset().left,
+					width = $('[data-anchor="#' + idBlock + '"]').outerWidth()/2,
+					offsetParent = $('[data-anchor="#' + idBlock + '"]').closest('.aside-catalog__list').scrollLeft(),
+					scroll = (offset + width) - ($(window).width()/2) + offsetParent;
+
+				$('[data-anchor="#' + idBlock + '"]').closest('.aside-catalog__list').stop().animate({ scrollLeft: scroll }, 300)
+			}
+		}
+	})
+}
