@@ -600,7 +600,11 @@ $(() => {
 		let href = $(this).data('anchor'),
 			hHead = $('.header__info-wrap').innerHeight(),
 			hCats = $('.aside-catalog__wrap').innerHeight(),
-			addOffset = hHead + hCats;
+			addOffset = hHead;
+
+			if ( $(window).width() < 1025 ) {
+				addOffset = hHead + hCats;
+			}
 
 		$('html, body').stop().animate({ scrollTop: $(href).offset().top - addOffset }, 1000)
 	})
