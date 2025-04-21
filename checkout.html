@@ -67,7 +67,7 @@
 								<div class="header-search header-search_checkout">
 									<div class="header-search__wrap">
 										<form action="" class="header-search__line _flex">
-											<input type="text" name="" value="" placeholder="Поиск товара" class="header-search__input">
+											<input type="text" name="" value="" placeholder="Поиск товара" id="search-input" class="header-search__input">
 
 											<button type="submit" class="header-search__submit">
 												<svg>
@@ -605,7 +605,16 @@
 									</div>
 
 									<div class="aside-cart__scroll aside-cart__scroll_checkout">
-										<div class="main-title">Товары в корзине</div>
+										<div class="aside-cart__scroll-top _flex">
+											<div class="main-title">Товары в корзине</div>
+
+											<button type="button" class="aside-cart__clear">
+												<svg>
+													<use xlink:href="images/sprite.svg#close1"></use>
+												</svg>
+												очистить
+											</button>
+										</div>
 	
 										<div class="cart-items">
 											<div class="cart-item _flex">

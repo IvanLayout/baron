@@ -145,19 +145,13 @@
 	}
 
 	.mini-modal__modal_phones{
-		display: none;
-		position: relative;
-		top: 0;
-		width: 100%;
-		background: #fff;
-		box-shadow: none;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0;
-	}
+		position: fixed;
+		top: auto;
+		bottom: 0;
 
-	.mini-modal__modal._active{
-		display: block;
+		padding: 24px 16px 15px;
+		width: 100%;
+		border-radius: 0;
 	}
 
 	.mini-modal_lang{
@@ -1145,8 +1139,10 @@
 	}
 
 	.aside-cart__clear{
-		position: absolute;
-		top: 79px;
-		right: 16px;
+		display: none;
+	}
+
+	.aside-cart__scroll-top .aside-cart__clear{
+		display: block;
 	}
 }

@@ -177,18 +177,18 @@
 		font-size: 14px;
 	}
 
-	.product__buy{
+	/* .product__buy{
 		line-height: 32px;
-	}
+	} */
 
-	.amount__btn{
+	/* .amount__btn{
 		width: 32px;
 		height: 32px;
-	}
+	} */
 
-	.amount__input{
+	/* .amount__input{
 		height: 19px;
-	}
+	} */
 
 	.amount__sum{
 		margin-top: 0;
@@ -197,6 +197,27 @@
 	.btn-wrap._mob{
 		margin-top: 15px;
 		display: block;
+	}
+
+	.products__slider2{
+		overflow: visible;
+	}
+
+	.products__slider2 .swiper-slide{
+		min-width: 132px;
+		width: calc(100%/5 - (32px/5));
+	}
+
+	.products__slider2 .product__price{
+		font-size: 14px;
+	}
+
+	.products__slider2 .product__oldprice{
+		font-size: 12px;
+	}
+
+	.products__slider2 .slider-pagination{
+		display: none;
 	}
 
 

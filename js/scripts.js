@@ -227,6 +227,53 @@ $(() => {
 		})
 	}
 
+	if ($('.products__slider2').length) {
+		new Swiper('.products__slider2', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 8,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			pagination: {
+				bulletActiveClass: 'slider-dot_active',
+				bulletClass: 'slider-dot',
+				clickableClass: 'slider-pagination-clickable',
+				el: '.slider-pagination',
+				clickable: true
+			},
+			scrollbar: {
+				el: ".slider-scrollbar",
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 8,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 8,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 12,
+					slidesPerView: 5
+				},
+				'1025': {
+					spaceBetween: 12,
+					slidesPerView: 5
+				}
+			}
+		})
+	}
+
 	if ($('.products-small__slider').length) {
 		new Swiper('.products-small__slider', {
 			loop: false,

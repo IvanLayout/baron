@@ -146,7 +146,7 @@
 	}
 
 	.cart-item__amount{
-		width: 99px;
+		width: 110px;
 		position: absolute;
 		right: 0;
 		top: 50%;
@@ -154,16 +154,16 @@
 	}
 
 	.cart-item .amount__btn{
-		width: 30px;
-		height: 30px;
+		width: 36px;
+		height: 36px;
 	}
 
 	.cart-item .amount__center {
-		width: calc(100% - 66px);
+		width: calc(100% - 74px);
 	}
 
 	.cart-item .amount__input{
-		height: 30px;
+		height: 36px;
 		font-size: 12px;
 	}
 

@@ -2913,6 +2913,17 @@ input[type=checkbox]:checked + .checkbox-range__text::after
     height: calc(100% - 90px);
 }
 
+.aside-cart__scroll-top{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.aside-cart__scroll-top .aside-cart__clear{
+	display: none;
+}
+
 .cart-item{
 	flex-wrap: nowrap;
 }
@@ -4687,7 +4698,15 @@ input[type=checkbox]:checked + .checkbox-range__text::after
 	margin-top: 23px;
 }
 
+.reviews__item .products{
+	margin-top: 23px;
+}
+
 .products-small__slider{
+	margin-top: 16px;
+}
+
+.products__slider2{
 	margin-top: 16px;
 }
 

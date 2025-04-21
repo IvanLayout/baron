@@ -86,6 +86,8 @@ $(() => {
 		} else{
 			$('.header-search').addClass('_show')
 			$('.header__info-wrap').addClass('_ind')
+
+			$('#search-input').focus()
 		}
 	})
 

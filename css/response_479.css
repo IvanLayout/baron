@@ -194,16 +194,19 @@
 	}
 	
 	
-	.fancybox__slide
+	.fancybox__slide.has-inline
 	{
 		padding: 0;
 	}
-
 
 	.modal{
 		padding-left: 16px;
 		padding-right: 16px;
 		border-radius: 0;
+	}
+
+	.modal_small{
+		width: 100%;
 	}
 
 	.select-time__flex .time-radio {
@@ -276,7 +279,7 @@
 		max-width: 120px;
 	}
 
-	.fancybox__slide::after{
+	.fancybox__slide.has-inline::after{
 		display: none;
 	}
 }

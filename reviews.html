@@ -114,11 +114,19 @@
 									</button>
 									
 									<div class="mini-modal__modal mini-modal__modal_phones">
+										<button type="button" data-mini-close class="mini-modal__close">
+											<svg>
+												<use xlink:href="images/sprite.svg#close2"></use>
+											</svg>
+										</button>
+
 										<div>
-											<a href="tel:+77273171000">+7 727 317 10 00</a>
-										</div>
-										<div>
-											<a href="tel:+77273171000">+7 727 317 10 00</a>
+											<div>
+												<a href="tel:+77273171000">+7 727 317 10 00</a>
+											</div>
+											<div>
+												<a href="tel:+77273171000">+7 727 317 10 00</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -134,11 +142,19 @@
 								</button>
 								
 								<div class="mini-modal__modal mini-modal__modal_phones">
-									<div class="">
-										<a href="tel:+77273171000">+7 727 317 10 00</a>
-									</div>
-									<div class="">
-										<a href="tel:+77273171000">+7 727 317 10 00</a>
+									<button type="button" data-mini-close class="mini-modal__close">
+										<svg>
+											<use xlink:href="images/sprite.svg#close2"></use>
+										</svg>
+									</button>
+
+									<div>
+										<div>
+											<a href="tel:+77273171000">+7 727 317 10 00</a>
+										</div>
+										<div>
+											<a href="tel:+77273171000">+7 727 317 10 00</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -242,7 +258,7 @@
 								<div class="header-search">
 									<div class="header-search__wrap">
 										<form action="" class="header-search__line _flex">
-											<input type="text" name="" value="" placeholder="Поиск товара" class="header-search__input">
+											<input type="text" name="" value="" placeholder="Поиск товара" id="search-input" class="header-search__input">
 
 											<button type="submit" class="header-search__submit">
 												<svg>
@@ -967,7 +983,212 @@
 															</p>
 														</div>
 
-														<div class="products-small products-small_marg">
+														<div class="products">
+															<div class="small-title">Товары в заказе</div>
+
+															<div class="products__slider2 swiper">
+																<div class="swiper-wrapper">
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																			<div class="product__sale">-20%</div>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																			<div class="product__sale">-20%</div>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+							
+																<div class="slider-pagination"></div>
+				
+																<div class="slider-scrollbar"></div>
+															</div>
+														</div>
+
+														<!-- <div class="products-small products-small_marg">
 															<div class="small-title">Товары в заказе</div>
 
 															<div class="products-small__slider swiper">
@@ -1051,7 +1272,7 @@
 
 																<div class="slider-pagination"></div>
 															</div>
-														</div>
+														</div> -->
 
 														<div class="reviews__reaction _flex">
 															<button class="open-comment">
@@ -1231,89 +1452,208 @@
 															</p>
 														</div>
 
-														<div class="products-small products-small_marg">
+														<div class="products">
 															<div class="small-title">Товары в заказе</div>
 
-															<div class="products-small__slider swiper">
+															<div class="products__slider2 swiper">
 																<div class="swiper-wrapper">
-																	<div class="swiper-slide">
-																		<div class="product-small _flex">
-																			<div class="product-small__thumb">
-																				<a href="/baron" class="product-small__img">
-																					<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-																				</a>
-																			</div>
-	
-																			<div class="product-small__box">
-																				<div class="product-small__name">
-																					<a href="/baron">Колбаски гриль баранина с&nbsp;кинзой...</a> <span>500 г</span>
-																				</div>
-	
-																				<div class="product-small__bot _flex">
-																					<div class="product-small__price">99 999 ₸</div>
-	
-																					<a href="/baron" class="product-small__buy">
-																						<svg>
-																							<use xlink:href="images/sprite.svg#cart"></use>
-																						</svg>
-																					</a>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																	<div class="swiper-slide">
-																		<div class="product-small _flex">
-																			<div class="product-small__thumb">
-																				<a href="/baron" class="product-small__img">
-																					<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-																				</a>
-																			</div>
-	
-																			<div class="product-small__box">
-																				<div class="product-small__name">
-																					<a href="/baron">Колбаски гриль баранина с&nbsp;кинзой...</a> <span>500 г</span>
-																				</div>
-	
-																				<div class="product-small__bot _flex">
-																					<div class="product-small__price">99 999 ₸</div>
-	
-																					<a href="/baron" class="product-small__buy">
-																						<svg>
-																							<use xlink:href="images/sprite.svg#cart"></use>
-																						</svg>
-																					</a>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																			<div class="product__sale">-20%</div>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
-																	<div class="swiper-slide">
-																		<div class="product-small _flex">
-																			<div class="product-small__thumb">
-																				<a href="/baron" class="product-small__img">
-																					<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-																				</a>
-																			</div>
-	
-																			<div class="product-small__box">
-																				<div class="product-small__name">
-																					<a href="/baron">Колбаски гриль баранина с&nbsp;кинзой...</a> <span>500 г</span>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
 																				</div>
-	
-																				<div class="product-small__bot _flex">
-																					<div class="product-small__price">99 999 ₸</div>
-	
-																					<a href="/baron" class="product-small__buy">
-																						<svg>
-																							<use xlink:href="images/sprite.svg#cart"></use>
-																						</svg>
-																					</a>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																			<div class="product__sale">-20%</div>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</div>
-
+							
 																<div class="slider-pagination"></div>
+				
+																<div class="slider-scrollbar"></div>
 															</div>
 														</div>
 
@@ -1456,39 +1796,54 @@
 															</p>
 														</div>
 
-														<div class="products-small products-small_marg">
+														<div class="products">
 															<div class="small-title">Товары в заказе</div>
 
-															<div class="products-small__slider swiper">
+															<div class="products__slider2 swiper">
 																<div class="swiper-wrapper">
-																	<div class="swiper-slide">
-																		<div class="product-small _flex">
-																			<div class="product-small__thumb">
-																				<a href="/baron" class="product-small__img">
-																					<img data-src="images/tmp/product_img1.jpg" src="images/img_plug.png" alt="" class="lazyload">
-																				</a>
-																			</div>
-	
-																			<div class="product-small__box">
-																				<div class="product-small__name">
-																					<a href="/baron">Колбаски гриль баранина с&nbsp;кинзой...</a> <span>500 г</span>
-																				</div>
-	
-																				<div class="product-small__bot _flex">
-																					<div class="product-small__price">99 999 ₸</div>
-	
-																					<a href="/baron" class="product-small__buy">
-																						<svg>
-																							<use xlink:href="images/sprite.svg#cart"></use>
-																						</svg>
-																					</a>
+																	<div class="swiper-slide product">
+																		<div class="product__top">
+																			<a href="/baron" class="product__img">
+																				<img data-src="images/tmp/product_img2.jpg" src="images/img_plug.png" alt="" class="lazyload">
+																			</a>
+																		</div>
+				
+																		<div class="product__prices _flex">
+																			<div class="product__price">99 999 ₸</div>
+																			<div class="product__oldprice">99 999 ₸</div>
+																		</div>
+				
+																		<div class="product__name">
+																			<a href="/baron">Колбаски гриль из баранины  с&nbsp;кинзой зам. гриль из баранины</a> <span>500 г</span>
+																		</div>
+				
+																		<div class="product__bot">
+																			<button type="button" class="product__buy">В корзину</button>
+				
+																			<div class="product__amount amount">
+																				<div class="amount__val _flex">
+																					<button type="button" disabled class="amount__btn amount__btn_minus">
+																						<img data-src="images/ic_minus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
+									
+																					<div class="amount__center">
+																						<input type="text" value="1 шт" data-minimum="1" data-maximum="999" data-step="1" data-text=" шт" class="amount__input" maxlength="3" readonly>
+				
+																						<div class="amount__sum">99 999 ₸</div>
+																					</div>
+									
+																					<button type="button" class="amount__btn amount__btn_plus">
+																						<img data-src="images/ic_plus.svg" src="images/img_plug.png" alt="" class="lazyload">
+																					</button>
 																				</div>
 																			</div>
 																		</div>
 																	</div>
 																</div>
-
+							
 																<div class="slider-pagination"></div>
+				
+																<div class="slider-scrollbar"></div>
 															</div>
 														</div>
 
